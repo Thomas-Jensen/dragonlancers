@@ -1,0 +1,81 @@
+//base
+@import "base/_reset.scss";
+
+//helpers
+@import "helpers/_functions.scss";
+@import "helpers/_helpers.scss";
+@import "helpers/_variables.scss";
+@import "helpers/_mixins.scss";
+
+//typography
+@import "base/_typography.scss";
+
+//components
+@import "components/_buttons.scss";
+@import "components/_carousel.scss";
+@import "components/_cover.scss";
+@import "components/_dropdown.scss";
+@import "components/_navigation.scss";
+
+//layout
+@import "layout/_footer.scss";
+@import "layout/_forms.scss";
+@import "layout/_grid.scss";
+@import "layout/_header.scss";
+@import "layout/_sidebar.scss";
+
+//views
+@import "views/_home.scss";
+@import "views/_coming.scss";
+@import "views/_services.scss";
+@import "views/_sitemap.scss";
+@import "views/_errors.scss";
+@import "views/_blog.scss";
+@import "views/_about.scss";
+
+
+//themes
+@import "themes/_admin.scss";
+@import "themes/_theme.scss";
+
+//animations
+@import "vendors/animations/animations";
+
+
+//syntax highlighter
+@import "vendors/prism";
+
+
+.animate {
+  @include animate-prefixer(animation-duration, $base-duration);
+  @include animate-prefixer(animation-fill-mode, none);
+
+  &.hinge {
+    @include animate-prefixer(animation-duration, $base-duration * 2);
+  }
+}
+
+.typed-cursor{
+  color: $white;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+

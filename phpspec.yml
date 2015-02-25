@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: DragonLancers
+        psr4_prefix: DragonLancers
+        src_path: app

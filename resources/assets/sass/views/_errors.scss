@@ -1,0 +1,16 @@
+.error
+{
+  flex-direction: column;
+  margin: auto;
+  min-height: 100vh;
+& figure
+{
+  margin: auto;
+  width: 50%;
+&  figcaption
+{
+  text-align:center;
+  font-size: 200%;
+}
+}
+}

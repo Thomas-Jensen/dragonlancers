@@ -1,0 +1,369 @@
+.contact-video-overlay
+{
+  margin: auto;
+  border: .125em solid $white;
+  padding: 5%;
+  height: 65%;
+  width: 65%;
+  font-size: 40%;
+  @include bp(1)
+  {
+    height: 51%;
+    width: 50%;
+    font-size: 50%;
+  }
+  @include bp(2)
+  {
+    font-size: 70%;
+  }
+  @include bp(3)
+  {
+    font-size: 80%;
+  }
+  @include bp(4)
+  {
+    font-size: 90%;
+    width: 40%;
+    height: 35%;
+  }
+  & h1
+  {
+    color: $white;
+    font-size: 400%;
+    line-height: 80%;
+  }
+}
+
+.about-video
+{
+  opacity: .7;
+}
+
+#intro
+{
+  flex-direction: column;
+}
+
+.intro-left
+{
+  width: 50%;
+  height: 5em;
+  border-right: .1em solid $black;
+}
+
+.intro-right
+{
+  width: 50%;
+}
+
+.intro-letter
+{
+  width: 78%;
+  border: .1em solid $black;
+  margin: auto;
+  padding: 5%;
+  @include bp(3)
+  {
+    width: 67%;
+  }
+  @include bp(4)
+  {
+    width: 37em;
+  }
+  & p
+  {
+    font-size: 150%;
+  }
+}
+
+.signature-letter
+{
+  line-height: 60%;
+}
+
+#values
+{
+  background-color: $primary;
+  color: $white;
+  padding: 1em 1em 5em 1em;
+  flex-direction: column;
+  align-items: center;
+  @include bp(2)
+  {
+    padding: 3em 1em 5em 1em;
+  }
+  @include bp(4)
+  {
+    flex-direction: row;
+    padding: 3em 1em 5em 4em;
+    min-height: 100vh;
+  }
+
+
+}
+
+.values-txt-holder
+{
+  width: 90%;
+  border-bottom: .1em solid;
+  border-right: .1em solid;
+  padding: 1em;
+  @include bp(2)
+  {
+    margin-top: 2em;
+    width: 80%;
+  }
+  @include bp(4)
+  {
+    width: 50%;
+  }
+}
+
+.values-menu-holder
+{
+  width: 100%;
+  @include bp(2)
+  {
+    width: 95%;
+  }
+  @include bp(4)
+  {
+    width: 50%;
+  }
+  @include bp(5)
+  {
+    width: 28em;
+  }
+}
+
+#leadership-box, #creative-process-box, #perfectionism-box, #technology-box
+{
+  display: none;
+}
+
+#process
+{
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.production-process {
+  padding: 1.5em;
+  margin: auto;
+  @include bp(2)
+  {
+    width: 80%;
+  }
+  @include bp(4)
+  {
+    padding: 2em 0 2em 0;
+    width: 70%;
+  }
+  @include bp(5)
+  {
+    width: 55em;
+  }
+  & h2 {
+    text-transform: capitalize;
+    text-align: center;
+  }
+}
+
+.active-slide
+{
+  text-decoration: underline;
+}
+
+.prod-slide-container
+{
+  width: 500%!important;
+  max-width: 9600px!important;
+  position: relative;
+  left: 0%;
+  transition: all .5s ease-in-out;
+}
+
+.prod-process
+{
+  display: flex;
+  width: 20%;
+  & img
+  {
+    width: 10em;
+    height: 10em;
+    align-self: center;
+    @include bp(2)
+    {
+      width: 15em;
+      height: 15em;
+    }
+    @include bp(4)
+    {
+      width: 20em;
+      height: 20em;
+    }
+  }
+  & p
+  {
+    width: 100%;
+    align-self: center;
+    @include bp(2)
+    {
+      width: 80%;
+    }
+    @include bp(4)
+    {
+      width: 50%;
+    }
+    @include bp(5)
+    {
+      width: 25em;
+      margin-left: 2.5em;
+    }
+  }
+  & div
+  {
+    display: flex;
+    padding: 1em;
+    justify-content: space-around;
+    flex-direction: column;
+    @include bp(4)
+    {
+      flex-direction: row;
+      padding: 3em;
+    }
+    @include bp(5)
+    {
+      margin: auto;
+    }
+  }
+}
+
+#team-info
+{
+  flex-direction: column;
+}
+
+.our-info-wrapper
+{
+  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+  @include bp(4)
+  {
+    flex-direction: row;
+  }
+  @include bp(5)
+  {
+    min-height: 100vh;
+  }
+}
+
+.left-blue
+{
+  width: 100%;
+  border-bottom: .1em solid $white;
+  @include bp(4)
+  {
+    border-right: .1em solid $white;
+  }
+}
+
+.right-blue
+{
+  width: 100%;
+}
+
+.our-info
+{
+  width: 70%;
+  padding: 15%;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @include bp(4)
+  {
+    width: 85%;
+    padding: 1em;
+    margin: auto;
+  }
+  & img
+  {
+    transform: rotate(45deg);
+    border: .1em solid $white;
+    width: 9.375em;
+    height: 9.375em;
+    margin: 2.210em;
+  }
+  & p
+  {
+    margin-top: 1.381em;
+    width: 100%;
+    @include bp(4)
+    {
+      width: 95%;
+      margin: auto;
+      padding-top: 1em;
+    }
+  }
+}
+
+.our-titles
+{
+  line-height: 0.6;
+  padding-top: 2.144em;
+  padding-left: 5%;
+}
+
+#map-wrapper
+{
+  transform: rotate(45deg);
+  position: relative;
+  width: 100%;
+  height: 20em;
+  border: .1em solid $secondary;
+  overflow: hidden;
+  margin: 10%;
+}
+
+#map-canvas
+{
+  width: 100%;
+  height: 50vh;
+  border-top: .1em solid $white;
+  @include bp(4)
+  {
+    height: 90vh;
+  }
+}
+
+#dl-info
+{
+  flex-direction: column;
+  @include bp(4)
+  {
+    flex-direction: row;
+  }
+}
+
+.company-info
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em auto auto auto;
+  @include bp(4)
+  {
+    margin: auto;
+  }
+  & p
+  {
+    margin-top: 1em;
+  }
+}
+
+.padding
+{
+  padding: 1%;
+}

@@ -1,0 +1,26 @@
+.footer
+{
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  background-color: $black;
+  color: $white;
+  padding-left: 2%;
+  padding-right: 2%;
+  @include bp(1)
+  {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  & p
+  {
+    margin: 0;
+    font-size: 1em;
+    @include bp(1)
+    {
+      font-size: 1.5em;
+    }
+  }
+}

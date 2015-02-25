@@ -1,0 +1,218 @@
+.blue-ink
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: $overlay;
+  width: 50%;
+}
+
+.wrapper-services
+{
+  margin: 1em;
+  flex-direction: column-reverse;
+  @include bp(4)
+  {
+    flex-direction: row;
+  }
+  @include bp(5)
+  {
+    margin: 4em;
+  }
+}
+
+.service-content
+{
+  width: 100%;
+  align-items: center!important;
+  @include bp(1)
+  {
+    width: 75%;
+    align-self: center;
+  }
+  @include bp(2)
+  {
+    width: 55%;
+  }
+  @include bp(4)
+  {
+    padding: 14em 2em 2em 2em;
+  }
+& article
+{
+  text-align: center;
+  margin: auto;
+  @include bp(4)
+  {
+    padding: 1em;
+  }
+  @include bp(5)
+  {
+    padding: 2em;
+  }
+}
+}
+
+.service-showcase
+{
+  width: 100%;
+  justify-content: center;
+}
+
+.services-links
+{
+  justify-content: center;
+  z-index: $overlay;
+  flex-wrap: wrap;
+  width: 80%;
+  align-self: center;
+  @include bp(1)
+  {
+    width: 70%;
+  }
+  @include bp(2)
+  {
+    width: 80%;
+  }
+}
+
+.services-print
+{
+  & svg
+  {
+    transition: all, .5s, ease-in-out;
+  }
+  &:hover svg
+  {
+    fill:$secondary;
+    transition: all, .5s, ease-in-out;
+  }
+&:hover
+{
+  cursor: pointer;
+}
+}
+
+.active-svg
+{
+  svg
+  {
+    fill:$secondary;
+    transitio: all, .5s, ease-in-out;
+  }
+
+}
+
+.active-svg-text
+{
+& svg g#Layer_1 text
+{
+    fill:$secondary;
+    transition: all, .5s, ease-in-out;
+  }
+}
+
+
+
+.active-svg-text2
+{
+    & svg g#Layer_2 text
+    {
+      fill:$secondary;
+      transition: all, .5s, ease-in-out;
+    }
+  }
+
+.active-svg-text3
+{
+  & svg g#Layer_3 text
+  {
+    fill:$secondary;
+    transition: all, .5s, ease-in-out;
+  }
+}
+
+
+.services-web
+{
+  @extend .services-print;
+}
+
+.services-apps
+{
+  @extend .services-print;
+}
+
+.services-subs
+{
+  @extend .services-print;
+}
+
+.service-img-print
+{
+  display: none;
+}
+
+.service-img-web
+{
+  display: none;
+}
+
+.service-img-apps
+{
+  display: none;
+}
+
+.service-img-subs
+{
+  display: none;
+}
+
+.service-txt-print
+{
+  display: none;
+}
+
+.service-txt-web
+{
+  display: none;
+}
+
+.service-txt-apps
+{
+  display: none;
+}
+
+.service-txt-subs
+{
+  display: none;
+}
+
+.service-contact
+{
+  display: flex;
+  width: 6.250em;
+  height: 3.125em;
+  box-shadow: 0.313em 0.313em 0.313em #888888;
+  margin: auto;
+  margin-bottom: 10%;
+& p
+{
+  margin: auto;
+  &:hover
+  {
+    color: $white;
+  }
+}
+  &:hover
+  {
+    cursor: pointer;
+    background: $secondary;
+    color: $white;
+  }
+}
+
+.mobile
+{
+  display: none;
+}

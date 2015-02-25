@@ -1,0 +1,184 @@
+$font-stack: 'Simplificadk', sans-serif;
+
+@font-face
+{
+  font-family: Simplificadk;
+  src: url("/fonts/Simplificadk.ttf") format('truetype'),
+  url("/fonts/Simplificadk.eot") format('embedded-opentype');
+
+}
+
+@font-face
+{
+  font-family: DXTA_TRIAL;
+  src: url("/fonts/DXTA_TRIAL.ttf") format('truetype'),
+  url("/fonts/DXTA_TRIAL.eot") format('embedded-opentype');
+}
+
+@font-face
+{
+  font-family: Felixti;
+  src: url("/fonts/Felixti.TTF") format('truetype'),
+  url("/fonts/Felixti.eot") format('embedded-opentype');
+}
+
+
+@font-face
+{
+  font-family: NixieOne;
+  src: url("/fonts/NixieOne.ttf") format('truetype'),
+  url("/fonts/NixieOne.eot") format('embedded-opentype');
+
+}
+
+body
+{
+  font-family: $font-stack;
+  letter-spacing: .05em;
+  font-weight: 400;
+
+}
+
+p
+{
+  font-size: 1.5em;
+  line-height: 1.3em;
+  letter-spacing: .05em;
+  margin-bottom: 1.5em;
+}
+
+h1
+{
+  font-size: 300%;
+}
+
+h2
+{
+  font-size: 250%;
+}
+
+h3
+{
+  font-size: 200%;
+}
+
+.dl-texthover
+{
+  font-size:120%!important;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 150%;
+  & article:hover
+  {
+    color: $white;
+  }
+}
+
+.landing-text
+{
+  font-size: 1000%;
+  color: $landingcolor;
+  margin-bottom: 10%;
+}
+
+.coming-soon
+{
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+  & h1
+  {
+    font-family: Felixti;
+    color: $landingcolor;
+    font-size: 500%;
+  }
+  & figure
+  {
+    width: 40%;
+    margin-top: 4em;
+  }
+}
+
+.qualities-small
+{
+  margin-top: 10%!important;
+  & h2{
+    margin-bottom: 5%;
+    & a
+    {
+      color: $white;
+    }
+  }
+}
+
+.dl
+{
+  font-size: 200%;
+  text-align: center;
+  font-family: Felixti;
+  color: $primary;
+  width: 100%;
+  text-align: center;
+  & a
+  {
+    color: $primary;
+  }
+  @include bp(1)
+  {
+    font-size: 250%;
+  }
+  @include bp(2)
+  {
+    font-size: 300%;
+  }
+  @include bp(3)
+  {
+    font-size: 325%;
+  }
+  @include bp(4)
+  {
+    font-size: 350%;
+  }
+}
+
+.ca
+{
+  font-size: 150%;
+  text-align: center;
+  font-family: Felixti;
+  color: $primary;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em!important;
+  & a
+  {
+    color: $primary;
+  }
+  @include bp(1)
+  {
+    font-size: 175%;
+  }
+  @include bp(2)
+  {
+    font-size: 225%;
+  }
+  @include bp(3)
+  {
+    font-size: 250%;
+  }
+  @include bp(4)
+  {
+    font-size: 265%;
+  }
+}
+
+
+.address
+{
+  line-height: 70%;
+  text-align: center;
+  & a:hover
+  {
+    color: $secondary;
+  }
+}

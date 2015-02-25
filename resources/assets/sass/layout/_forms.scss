@@ -1,0 +1,44 @@
+.contact-form
+{
+  width: 65%;
+  padding-right: 16%;
+}
+
+.name
+{
+  display: block;
+  border: none;
+  border-bottom: .2em solid $white;
+  background-color: transparent;
+  color: $white;
+  width: 50%;
+  margin-bottom: 10%;
+}
+
+.email
+{
+  @extend .name;
+  width: 70%;
+  margin-bottom: 10%;
+}
+
+.message
+{
+  @extend .name;
+  width: 90%;
+  margin-bottom: 0;
+}
+
+input
+{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+::placeholder
+{
+  color: $white;
+}
+
