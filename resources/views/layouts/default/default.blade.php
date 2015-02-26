@@ -25,9 +25,9 @@
                 }
         );
     </script>
-
-    <a href="https://plus.google.com/111624196448495342344" rel="publisher" style="display: none;">Google+</a>
         @yield('head')
+    <a href="https://plus.google.com/111624196448495342344" rel="publisher" style="display: none;">Google+</a>
+
 </head>
 <body>
     <section class="container">

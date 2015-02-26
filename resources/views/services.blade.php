@@ -2,7 +2,7 @@
 
 
 @section('head')
-    <meta name="Description" content="{{ trans('description.services') }}">
+    <meta name="Description" content="{{ trans('description.home') }}">
     <title>Dragon Lancers | {{ trans('title.services') }}</title>
 @stop
 
