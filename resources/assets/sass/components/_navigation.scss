@@ -13,21 +13,50 @@ a
 
 .menu
 {
-  width: 18.750em;
-  position: fixed;
   background-color: $white;
-  right: 0;
-  top: 10%;
   display: none;
   z-index: $menu;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  @include bp(5)
+  {
+    width: 18.750em;
+    min-height: 0;
+    position: fixed;
+    top: 10%;
+    text-align: left;
+  }
+}
+
+.small-menu-center-outer
+{
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  @include bp(5)
+  {
+    min-height: 0;
+    display: block;
+  }
+}
+
+.small-menu-center-inner
+{
+  margin: auto;
 }
 
 .nav-list
 {
-  margin-top: 40%;
-  margin-left: 15%;
-  margin-bottom: 25%;
-
+  @include bp(5)
+  {
+    margin-top: 40%;
+    margin-left: 15%;
+    margin-bottom: 25%;
+  }
   & a
   {
     font-size: 180%;

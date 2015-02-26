@@ -307,20 +307,44 @@ a {
     color: #c54500; }
 
 .menu {
-  width: 18.75em;
-  position: fixed;
   background-color: #ffffff;
-  right: 0;
-  top: 10%;
   display: none;
-  z-index: 3; }
+  z-index: 3;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  top: 0; }
+  @media (min-width: 1280px) {
+    .menu {
+      width: 18.75em;
+      min-height: 0;
+      position: fixed;
+      top: 10%;
+      text-align: left; } }
 
-.nav-list, .nav-list-lang {
-  margin-top: 40%;
-  margin-left: 15%;
-  margin-bottom: 25%; }
-  .nav-list a, .nav-list-lang a {
-    font-size: 180%; }
+.small-menu-center-outer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100vh; }
+  @media (min-width: 1280px) {
+    .small-menu-center-outer {
+      min-height: 0;
+      display: block; } }
+
+.small-menu-center-inner {
+  margin: auto; }
+
+@media (min-width: 1280px) {
+  .nav-list, .nav-list-lang {
+    margin-top: 40%;
+    margin-left: 15%;
+    margin-bottom: 25%; } }
+.nav-list a, .nav-list-lang a {
+  font-size: 180%; }
 
 .nav-list-lang {
   display: inline-block;
@@ -711,6 +735,15 @@ section {
   @media (min-width: 1280px) {
     .philosophy {
       margin-bottom: -13em; } }
+  @media (min-width: 1440px) {
+    .philosophy {
+      margin-bottom: -16em; } }
+  @media (min-width: 1600px) {
+    .philosophy {
+      margin-bottom: -18em; } }
+  @media (min-width: 1920px) {
+    .philosophy {
+      margin-bottom: -21em; } }
 
 .philosophy-left {
   width: 50%;
@@ -738,6 +771,18 @@ section {
       @media (min-width: 1280px) {
         .philosophy-left article h2 {
           padding-left: 30%; } }
+      @media (min-width: 1440px) {
+        .philosophy-left article h2 {
+          padding-left: 42%;
+          font-size: 230%; } }
+      @media (min-width: 1600px) {
+        .philosophy-left article h2 {
+          padding-left: 45%;
+          font-size: 245%; } }
+      @media (min-width: 1920px) {
+        .philosophy-left article h2 {
+          padding-left: 50%;
+          font-size: 275%; } }
 
 .philosophy-right, .philosophy-right-top {
   -webkit-flex-direction: column;
@@ -775,6 +820,15 @@ section {
     @media (min-width: 1280px) {
       .philosophy-right-top h2 {
         font-size: 250%; } }
+    @media (min-width: 1440px) {
+      .philosophy-right-top h2 {
+        font-size: 260%; } }
+    @media (min-width: 1600px) {
+      .philosophy-right-top h2 {
+        font-size: 270%; } }
+    @media (min-width: 1920px) {
+      .philosophy-right-top h2 {
+        font-size: 300%; } }
   .philosophy-right-top figure {
     width: 100%;
     position: relative;
@@ -794,6 +848,15 @@ section {
     @media (min-width: 1280px) {
       .philosophy-right-top figure {
         bottom: -24em; } }
+    @media (min-width: 1440px) {
+      .philosophy-right-top figure {
+        bottom: -27em; } }
+    @media (min-width: 1600px) {
+      .philosophy-right-top figure {
+        bottom: -30em; } }
+    @media (min-width: 1920px) {
+      .philosophy-right-top figure {
+        bottom: -37em; } }
 
 .philosophy-right-bottom figure {
   width: 100%; }
@@ -861,6 +924,24 @@ section {
       margin-bottom: 10em;
       padding-left: 6em;
       padding-right: 6em; } }
+  @media (min-width: 1440px) {
+    .services {
+      padding-left: 8em;
+      padding-right: 8em;
+      margin-top: 12em;
+      margin-bottom: 12em; } }
+  @media (min-width: 1440px) {
+    .services {
+      padding-left: 10em;
+      padding-right: 10em;
+      margin-top: 14em;
+      margin-bottom: 14em; } }
+  @media (min-width: 1920px) {
+    .services {
+      padding-left: 12em;
+      padding-right: 12em;
+      margin-top: 16em;
+      margin-bottom: 16em; } }
   @media (min-width: 480px) {
     .services figure {
       margin: 1em; } }
@@ -888,6 +969,14 @@ section {
     .team {
       margin-bottom: -12em;
       padding-bottom: 8em; } }
+  @media (min-width: 1600px) {
+    .team {
+      margin-bottom: -15em;
+      padding-bottom: 10em; } }
+  @media (min-width: 1920px) {
+    .team {
+      margin-bottom: -17em;
+      padding-bottom: 12em; } }
 
 .rotate {
   -webkit-transform: rotate(-45deg);
@@ -1117,11 +1206,14 @@ section {
   @media (min-width: 480px) {
     .contact {
       bottom: 17%; } }
+  @media (min-width: 1920px) {
+    .contact {
+      bottom: 20%; } }
 
 #skyline-parallax {
   background: url('/images/build/skyline.jpg');
   background-attachment: fixed;
-  background-position: 25% 0;
+  background-position: 50% 0;
   background-repeat: repeat-y;
   min-height: 6em;
   width: 100%;
@@ -1173,6 +1265,9 @@ section {
   left: 0;
   z-index: 1;
   width: 50%; }
+  @media (min-width: 1440px) {
+    .blue-ink {
+      width: 30%; } }
 
 .wrapper-services {
   margin: 1em;
@@ -1214,6 +1309,15 @@ section {
     @media (min-width: 1280px) {
       .service-content article {
         padding: 2em; } }
+    @media (min-width: 1440px) {
+      .service-content article {
+        padding: 4em; } }
+    @media (min-width: 1600px) {
+      .service-content article {
+        padding: 5em; } }
+    @media (min-width: 1920px) {
+      .service-content article {
+        padding: 9em; } }
 
 .service-showcase {
   width: 100%;
@@ -1331,7 +1435,7 @@ section {
       font-size: 200%; }
 
 .blog-menu-container {
-  width: 100%;
+  max-width: 80em;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
@@ -1357,6 +1461,9 @@ section {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media (min-width: 1600px) {
+    .blog-container {
+      width: 90%; } }
 
 .blog-post, .blog-post-category, .blog-posts {
   width: 85%;
@@ -1386,7 +1493,7 @@ section {
         .blog-post header section div, .blog-post-category header section div, .blog-posts header section div {
           margin: 0; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 800px) {
   .blog-post-category {
     width: 80%; } }
 
@@ -1675,6 +1782,15 @@ section {
       font-size: 90%;
       width: 40%;
       height: 35%; } }
+  @media (min-width: 1440px) {
+    .contact-video-overlay {
+      width: 35%;
+      height: 30%; } }
+  @media (min-width: 1920px) {
+    .contact-video-overlay {
+      width: 30%;
+      height: 25%;
+      font-size: 100%; } }
   .contact-video-overlay h1 {
     color: #ffffff;
     font-size: 400%;
@@ -1758,6 +1874,12 @@ section {
   @media (min-width: 1280px) {
     .values-menu-holder {
       width: 28em; } }
+  @media (min-width: 1440px) {
+    .values-menu-holder {
+      margin: 2em; } }
+  @media (min-width: 1920px) {
+    .values-menu-holder {
+      margin: 5em; } }
 
 #leadership-box, #creative-process-box, #perfectionism-box, #technology-box {
   display: none; }
@@ -1781,6 +1903,9 @@ section {
   @media (min-width: 1280px) {
     .production-process {
       width: 55em; } }
+  @media (min-width: 1440px) {
+    .production-process {
+      padding: 3em 0 2em 0; } }
   .production-process h2 {
     text-transform: capitalize;
     text-align: center; }
@@ -1877,10 +2002,18 @@ section {
   border-bottom: .1em solid #ffffff; }
   @media (min-width: 1024px) {
     .left-blue {
-      border-right: .1em solid #ffffff; } }
+      border-right: .1em solid #ffffff;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .right-blue {
   width: 100%; }
+  @media (min-width: 1024px) {
+    .right-blue {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .our-info {
   width: 70%;
@@ -1970,6 +2103,12 @@ section {
 
 .padding {
   padding: 1%; }
+  @media (min-width: 1440px) {
+    .padding {
+      padding: 5em; } }
+  @media (min-width: 1920px) {
+    .padding {
+      padding: 10em; } }
 
 @-webkit-keyframes fadeIn {
   0% {

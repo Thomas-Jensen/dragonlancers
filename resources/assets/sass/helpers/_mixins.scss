@@ -20,6 +20,18 @@
   {
     @media (min-width: 1280px) { @content;}
   }
+  @if $point == 6
+  {
+    @media (min-width: 1440px) { @content;}
+  }
+  @if $point == 7
+  {
+    @media (min-width: 1600px) { @content;}
+  }
+  @if $point == 8
+  {
+    @media (min-width: 1920px) { @content;}
+  }
 
 }
 

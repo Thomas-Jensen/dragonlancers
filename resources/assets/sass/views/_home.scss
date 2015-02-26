@@ -113,6 +113,18 @@
   {
     margin-bottom: -13em;
   }
+  @include bp(6)
+  {
+    margin-bottom: -16em;
+  }
+  @include bp(7)
+  {
+    margin-bottom: -18em;
+  }
+  @include bp(8)
+  {
+    margin-bottom: -21em;
+  }
 }
 
 .philosophy-left {
@@ -145,6 +157,21 @@
       @include bp(5)
       {
         padding-left: 30%;
+      }
+      @include bp(6)
+      {
+        padding-left: 42%;
+        font-size: 230%;
+      }
+      @include bp(7)
+      {
+        padding-left: 45%;
+        font-size: 245%;
+      }
+      @include bp(8)
+      {
+        padding-left: 50%;
+        font-size: 275%;
       }
     }
   }
@@ -190,6 +217,18 @@
   {
     font-size: 250%;
   }
+  @include bp(6)
+  {
+    font-size: 260%;
+  }
+  @include bp(7)
+  {
+    font-size: 270%;
+  }
+  @include bp(8)
+  {
+    font-size: 300%;
+  }
 }
 & figure
 {
@@ -215,6 +254,18 @@
   @include bp(5)
   {
     bottom: -24em;
+  }
+  @include bp(6)
+  {
+    bottom: -27em;
+  }
+  @include bp(7)
+  {
+    bottom: -30em;
+  }
+  @include bp(8)
+  {
+    bottom: -37em;
   }
 }
 }
@@ -286,6 +337,27 @@
     padding-left: 6em;
     padding-right: 6em;
   }
+  @include bp(6)
+  {
+    padding-left: 8em;
+    padding-right: 8em;
+    margin-top: 12em;
+    margin-bottom: 12em;
+  }
+  @include bp(6)
+  {
+    padding-left: 10em;
+    padding-right: 10em;
+    margin-top: 14em;
+    margin-bottom: 14em;
+  }
+  @include bp(8)
+  {
+    padding-left: 12em;
+    padding-right: 12em;
+    margin-top: 16em;
+    margin-bottom: 16em;
+  }
   & figure
   {
     @include bp(1)
@@ -320,6 +392,16 @@
   {
     margin-bottom: -12em;
     padding-bottom: 8em;
+  }
+  @include bp(7)
+  {
+    margin-bottom: -15em;
+    padding-bottom: 10em;
+  }
+  @include bp(8)
+  {
+    margin-bottom: -17em;
+    padding-bottom: 12em;
   }
 }
 
@@ -571,13 +653,17 @@
   {
     bottom: 17%;
   }
+  @include bp(8)
+  {
+    bottom: 20%;
+  }
 }
 
 #skyline-parallax
 {
   background: url('/images/build/skyline.jpg');
   background-attachment: fixed;
-  background-position: 25% 0;
+  background-position: 50% 0;
   background-repeat: repeat-y;
   min-height: 6em;
   width: 100%;

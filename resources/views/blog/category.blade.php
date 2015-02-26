@@ -1,5 +1,12 @@
 @extends('layouts.default.default')
 
+
+@section('head')
+    <meta name="Description" content="{{ trans('description.home') }}">
+    <title>Dragon Lancers | Blog | {{ ucwords($category) }}</title>
+@stop
+
+
 @section('content')
 
 @extends('layouts.blog.nav')

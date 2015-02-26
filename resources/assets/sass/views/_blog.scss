@@ -1,6 +1,6 @@
 .blog-menu-container
 {
-  width: 100%;
+  max-width: 80em;
   align-self: center;
   flex-wrap: wrap;
   padding-top: 1.5em;
@@ -16,6 +16,10 @@
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   justify-content: center;
+  @include bp(7)
+  {
+    width: 90%;
+  }
 }
 
 .blog-post {
@@ -51,7 +55,7 @@
 .blog-post-category
 {
   @extend .blog-post;
-  @include bp(5)
+  @include bp(3)
   {
     width: 80%;
   }

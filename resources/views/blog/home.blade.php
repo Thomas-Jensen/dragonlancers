@@ -1,7 +1,8 @@
 @extends('layouts.default.default')
 
 @section('head')
-
+    <meta name="Description" content="{{ trans('description.home') }}">
+    <title>Dragon Lancers | {{ trans('title.blog') }}</title>
     <script>
         $(function(){
             $(".typed-php").typed({
@@ -68,7 +69,7 @@
             </div>
             <footer class="article-footer">
                 <div class="{{ $article->category }}-link author-link">
-                    <p class="author-by"> {{ trans('blog.by') }} <a href="blog/authors/#{{ str_slug($article->author, '-') }}">{{ $article->author }}</a></p>
+                    <p class="author-by"> {{ trans('blog.by') }} <a href="{{ trans('routes.authors') }}/#{{ str_slug($article->author, '-') }}">{{ $article->author }}</a></p>
                 </div>
                 <div class="date">
                     <p>@if(LaravelLocalization::getCurrentLocale()=='da'){{ $article->published_at->format('d-m-Y') }}

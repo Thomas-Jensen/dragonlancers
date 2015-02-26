@@ -25,6 +25,10 @@ return array(
 
     'production-process' => 'production process',
 
+    'services' => 'Services',
+
+    'blog' => 'Blog',
+
 
 
 

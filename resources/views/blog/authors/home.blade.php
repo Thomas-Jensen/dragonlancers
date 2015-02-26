@@ -7,7 +7,7 @@
 
 
     <section class="blog-container">
-        <article class="blog-post">
+        <article class="blog-post-category">
             <header>
                 <div class="dragonlancers-line">
                     <h1 class="dragonlancers article-category">{{ trans('blog.authors') }}</h1>

@@ -5,6 +5,10 @@
   left: 0;
   z-index: $overlay;
   width: 50%;
+  @include bp(6)
+  {
+    width: 30%;
+  }
 }
 
 .wrapper-services
@@ -49,6 +53,18 @@
   @include bp(5)
   {
     padding: 2em;
+  }
+  @include bp(6)
+  {
+    padding: 4em;
+  }
+  @include bp(7)
+  {
+    padding: 5em;
+  }
+  @include bp(8)
+  {
+    padding: 9em;
   }
 }
 }

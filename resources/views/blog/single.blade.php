@@ -1,7 +1,20 @@
 @extends('layouts.default.default')
 
-@section('content')
+@section('head')
+    <meta name="Description" content="{{ trans('description.home') }}">
+    <title> @if(laravelLocalization::getCurrentLocale() == 'da')
+            @if ($article->title_da !== '')
+                {{ $article->title_da }}
+            @else
+                {{ $article->title_en }}
+            @endif
+        @else
+            {{ $article->title_en }}
+        @endif
+    </title>
+@stop
 
+@section('content')
 
 @extends('layouts.blog.nav')
 

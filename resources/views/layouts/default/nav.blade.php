@@ -7,6 +7,8 @@
         </a>
     </figure>
     <div class="menu">
+        <div class="small-menu-center-outer">
+            <div class="small-menu-center-inner">
         <nav>
             <ul class="nav-list">
                 <li class="nav-item">
@@ -65,7 +67,7 @@
 
                 <li class="nav-item">
                     <a id="blog-link" class="{{ Request::is(LaravelLocalization::getCurrentLocale().'/'.trans('routes.blog').'*') ? 'active' : ''}}"
-                       href="{{ url('blog') }}">Blog</a>
+                       href="{{ url(laravelLocalization::getCurrentLocale().'/'.'blog') }}">Blog</a>
                 </li>
 
                     <li class="nav-item">
@@ -104,6 +106,7 @@
             </li>
             <a href="sitemap"></a>
         </ul>
-
+        </div>
+    </div>
     </div>
 </div>
