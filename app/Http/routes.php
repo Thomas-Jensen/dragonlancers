@@ -59,6 +59,5 @@ Route::group(
 Route::get('coming', 'PagesController@coming');
 Route::get('browser', 'PagesController@browser');
 Route::resource('email', 'EmailController');
-Route::get('mail', function(){return view('emails.misc.maintenance');});
 
 
