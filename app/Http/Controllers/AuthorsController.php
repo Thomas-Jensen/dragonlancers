@@ -57,8 +57,8 @@ class AuthorsController extends Controller {
         {
             $file = Input::file('image');
 
-            $name = time() . '-' . $input['slug_author'];
-            $file->move(public_path() . '/assets/images/authors/', $name);
+            $name = time() . '-' . $input['slug_author'] . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path() . '/images/authors/', $name);
 
             $input['image'] = $name;
         }
@@ -105,7 +105,7 @@ class AuthorsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($slug_author, Request $request)
+	public function update($slug_author)
 	{
         $input = Request::all();
 
@@ -115,17 +115,17 @@ class AuthorsController extends Controller {
         {
             $file = Input::file('image');
 
-            $name = time() . '-' . $input['slug_author'];
-            $file->move(public_path() . '/assets/images/authors/', $name);
+            $name = time() . '-' . $input['slug_author'] . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path() . '/images/authors/', $name);
 
             $input['image'] = $name;
         }
-        elseif (Input::hasFile('image') == null)
+        elseif (Input::hasFile('image') == false)
         {
             $input['image'] = 'noimage.png';
         }
 
-        $author->update($request::all());
+        $author->update($input);
 
         return redirect('blog/authors');
 
