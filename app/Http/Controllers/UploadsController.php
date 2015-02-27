@@ -48,7 +48,7 @@ class UploadsController extends Controller {
             foreach ($images as $image)
             {
                 $name = $image->getClientOriginalName();
-                $image->move(public_path() . 'images/articles/', $name);
+                $image->move(public_path() . '/images/articles/', $name);
             }
         }
 
