@@ -39,7 +39,7 @@
 
 @section('content')
 
-@extends('layouts.blog.bigmenu')
+@include('layouts.blog.bigmenu')
 
 <section class="blog-container">
 

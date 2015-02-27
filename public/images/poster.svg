@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">=
+ <g>
+  <title>Layer 1</title>
+  <line id="svg_1" y2="392.703" x2="19.243" y1="8.243" x1="19.243" stroke-miterlimit="10" stroke="#000000"/>
+  <rect id="svg_2" height="41.216" width="193.081" fill="none" y="31.284" x="38.135"/>
+  <text id="svg_3" font-size="48" font-family="&#x27;Simplifica'" fill="#E0E0DF" transform="matrix(1,0,0,1,38.1353,65.6519) ">DESIGN</text>
+  <rect id="svg_4" height="42.567" width="82.432" fill="none" y="80.892" x="38.135"/>
+  <text id="svg_5" font-size="48" font-family="&#x27;Simplifica'" fill="#E0E0DF" transform="matrix(1,0,0,1,38.1353,115.2593) ">{{ trans(&#x27;poster.is') }}</text>
+  <rect id="svg_6" height="55.406" width="255.405" fill="none" y="130.459" x="33.514"/>
+  <text id="svg_7" font-size="48" font-family="&#x27;Simplifica'" fill="#E0E0DF" transform="matrix(1,0,0,1,33.5137,164.8267) ">{{ trans(&#x27;poster.the-power') }}</text>
+  <rect id="svg_8" height="51.351" width="104.73" fill="none" y="178.595" x="32.986"/>
+  <text id="svg_9" font-size="48" font-family="&#x27;Simplifica'" fill="#E0E0DF" transform="matrix(1,0,0,1,32.9863,212.9619) ">{{ trans(&#x27;poster.that') }}</text>
+  <rect id="svg_10" height="61.486" width="137.837" fill="none" y="182" x="104.081"/>
+  <text id="svg_11" font-size="36" font-family="&#x27;DXTA_TRIAL'" fill="#E0E0DF" transform="matrix(1,0,0,1,104.0811,209.6475) ">{{ trans(&#x27;poster.creates') }}</text>
+  <rect id="svg_12" height="45.946" width="119.595" fill="none" y="226.812" x="36.135"/>
+  <text id="svg_13" font-size="48" font-family="&#x27;Simplifica'" fill="#E0E0DF" transform="matrix(1,0,0,1,36.1353,261.1787) ">{{ trans(&#x27;poster.opinion') }}</text>
+ </g></svg>
