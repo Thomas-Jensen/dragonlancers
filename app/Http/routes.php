@@ -27,7 +27,6 @@ Route::group(
     Route::get(LaravelLocalization::transRoute('routes.services'), 'PagesController@services');
     Route::get(LaravelLocalization::transRoute('routes.about'), 'PagesController@about');
     Route::get(LaravelLocalization::transroute('routes.authors'), 'AuthorsController@index');
-    Route::post('contact', 'EmailController@contact');
     Route::get('blog', 'ArticlesController@index');
     Route::get('blog/admin', 'ArticlesController@admin');
     Route::get('blog/create', 'ArticlesController@create');
@@ -59,6 +58,7 @@ Route::group(
 
 Route::get('coming', 'PagesController@coming');
 Route::get('browser', 'PagesController@browser');
+Route::post('contact', 'EmailController@contact');
 Route::resource('email', 'EmailController');
 Route::get('mail', function(){return view('emails.misc.maintenance');});
 
