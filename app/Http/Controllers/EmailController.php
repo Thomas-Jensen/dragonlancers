@@ -1,4 +1,5 @@
 <?php namespace DragonLancers\Http\Controllers;
+use Illuminate\Support\Facades\Input;
 
 class EmailController extends Controller {
 
