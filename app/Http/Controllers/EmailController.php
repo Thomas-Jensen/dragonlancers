@@ -1,6 +1,6 @@
 <?php namespace DragonLancers\Http\Controllers;
 use Illuminate\Support\Facades\Input;
-
+use Illuminate\Support\Facades\Validator;
 class EmailController extends Controller {
 
 	/**
