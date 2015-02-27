@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37d1a9ec-c029-4b77-8958-ca6789c050bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/EmailController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmailController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
     </list>
     <ignored path="dragonlancers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,14 +33,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EmailController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmailController.php">
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.118863046" vertical-offset="0" max-vertical-offset="3128">
-              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-              <folding>
-                <element signature="e#48#85#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.44573644" vertical-offset="0" max-vertical-offset="4807">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,10 +98,10 @@
         <option value="$PROJECT_DIR$/resources/views/services.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/blog/home.blade.php" />
         <option value="$PROJECT_DIR$/config/services.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EmailController.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
       </list>
     </option>
   </component>
@@ -1388,29 +1386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44573644" vertical-offset="0" max-vertical-offset="4807">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424997118000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Input.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14857881" vertical-offset="0" max-vertical-offset="805">
@@ -1600,6 +1575,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmailController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.118863046" vertical-offset="0" max-vertical-offset="3128">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder=" Display a listing of the resource. ..." />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder=" Show the form for creating a new resource. ..." />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder=" Store a newly created resource in storage. ..." />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder=" Display the specified resource. ..." />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder=" Show the form for editing the specified resource. ..." />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder=" Update the specified resource in storage. ..." />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder=" Remove the specified resource from storage. ..." />
+            <marker date="1424998351000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31625" vertical-offset="0" max-vertical-offset="800">
@@ -1608,13 +1616,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmailController.php">
+    <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.118863046" vertical-offset="0" max-vertical-offset="3128">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding>
-            <element signature="e#48#85#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.44573644" vertical-offset="0" max-vertical-offset="4807">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
