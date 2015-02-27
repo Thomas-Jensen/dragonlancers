@@ -56,7 +56,6 @@ Route::group(
 });
 
 /** OTHER PAGES THAT SHOULD NOT BE LOCALIZED **/
-
 Route::get('coming', 'PagesController@coming');
 Route::get('browser', 'PagesController@browser');
 Route::resource('email', 'EmailController');

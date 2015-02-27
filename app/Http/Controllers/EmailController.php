@@ -40,15 +40,16 @@ class EmailController extends Controller {
 		Mail::queue('emails.form.welcome', $data, function($message) use ($data)
 		{
 			$message->from('welcome@dragonlancers.com', 'Dragon Lancers');
-			$message->to($data['email'])->subject('Welcome to Dragon Lancers!');
+			$message->to($data['email'])->subject(trans('emails/welcome.welcome-title'));
 		}
 		);
-        return 'Sent!';
+        return redirect('home');
         }
         else{
             return Redirect::back()->withInput()->withErrors($validation->messages());
         }
     }
+
 
 
 	public function index()

@@ -61,7 +61,7 @@
                                     {{ trans('emails/info.dragonlancers') }}</td>
                             </tr>
                             <tr>
-                                <td class="c7">{{ trans('emails/info.automated') }}</td>
+                                <td class="c7">{!! trans('emails/info.automated') !!}</td>
                             </tr>
                         </table>
                     </td>
