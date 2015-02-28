@@ -71,10 +71,10 @@
                 </li>
 
                     <li class="nav-item">
-                        <a @if(LaravelLocalization::getCurrentLocaleName() == 'English') class ='active'@endif href="{{LaravelLocalization::getLocalizedURL('en') }}">EN</a>
+                        <a rel="alternate" @if(LaravelLocalization::getCurrentLocaleName() == 'English') class ='active'@endif href="{{LaravelLocalization::getLocalizedURL('en') }}" hreflang="en">EN</a>
                     </li>
                     <li class="nav-item">
-                        <a @if(LaravelLocalization::getCurrentLocaleName() == 'Danish') class ='active'@endif href="{{LaravelLocalization::getLocalizedURL('da') }}">DA</a>
+                        <a rel="alternate" @if(LaravelLocalization::getCurrentLocaleName() == 'Danish') class ='active'@endif href="{{LaravelLocalization::getLocalizedURL('da') }}" hreflang="da">DA</a>
                     </li>
             </ul>
         </nav>

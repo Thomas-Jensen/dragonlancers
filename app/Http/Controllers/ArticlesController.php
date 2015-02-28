@@ -161,7 +161,9 @@ class ArticlesController extends Controller {
 
         $author = Author::where('author', $article->author)->firstOrFail();
 
-        return view('blog.single', compact('article', 'author'));
+        $post = 'variable for headers to work';
+
+        return view('blog.single', compact('article', 'author', 'post'));
 	}
 
 

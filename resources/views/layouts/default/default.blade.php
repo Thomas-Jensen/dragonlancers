@@ -3,6 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    @include('layouts.default.hreflang')
     <link rel="icon" type="image/png" href="{{ asset('images/build/dl-favicon-flame.png') }}">
     <link href="{{ elixir('css/app.css') }}" type="text/css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

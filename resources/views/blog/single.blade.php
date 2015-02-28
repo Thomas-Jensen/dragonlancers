@@ -16,7 +16,7 @@
 
 @section('content')
 
-@extends('layouts.blog.nav')
+@include('layouts.blog.nav')
 
     <section class="blog-container">
         <article class="blog-post">
