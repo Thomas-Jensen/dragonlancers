@@ -146,7 +146,7 @@ class ArticlesController extends Controller {
 
         Article::create($input);
 
-        return redirect('blog');
+        return redirect('blog/admin');
 	}
 
 	/**
