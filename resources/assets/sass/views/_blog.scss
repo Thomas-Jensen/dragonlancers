@@ -161,6 +161,11 @@
   width: 90%;
   margin: auto;
   margin-bottom: 10%;
+  & img
+  {
+    align-self: center;
+    margin: 1em;
+  }
 }
 
 .article-data
