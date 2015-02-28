@@ -56,7 +56,7 @@
                 </section>
             </header>
             <article>
-                <section  class="blog-article">
+                <section  class="blog-article {{ $article->category }}-link">
                     @if(laravelLocalization::getCurrentLocale() == 'da')
                         @if ($article->body_da !== '')
                             {!! $article->body_da !!}
