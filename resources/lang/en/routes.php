@@ -16,6 +16,8 @@ return array(
 
     'work' => 'work',
 
+    'coming' => 'coming',
+
     'services' => 'services',
     
     'about' => 'about-us',

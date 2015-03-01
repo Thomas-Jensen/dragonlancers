@@ -11,6 +11,10 @@ return array(
     |
     */
 
+    'coming-soon' => 'KOMMER SNART',
+
+    'browser' => 'Opdater venligst til en god moderne browser som disse:',
+
     'error-code' => 'Fejl Kode',
 
     'logged' => 'Fejlen er blevet registreret',

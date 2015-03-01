@@ -12,6 +12,11 @@ class PagesController extends Controller {
 		return view('home');
 	}
 
+    public function success()
+    {
+        return view('confirmations.form.success');
+    }
+
 
 	public function services()
 	{

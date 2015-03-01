@@ -43,7 +43,7 @@ class EmailController extends Controller {
 			$message->to($data['email'])->subject(trans('emails/welcome.welcome-title'));
 		}
 		);
-        return redirect('home');
+        return redirect('success');
         }
         else{
             return Redirect::back()->withInput()->withErrors($validation->messages());

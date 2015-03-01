@@ -11,6 +11,10 @@ return array(
     |
     */
 
+    'coming-soon' => 'COMING SOON',
+
+    'browser' => 'Please update to a good modern browser like these:',
+
     'error-code' => 'Error Code',
 
     'logged' => 'The error has been logged',

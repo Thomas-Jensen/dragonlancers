@@ -16,6 +16,8 @@ return array(
 
     'work' => 'arbejde',
 
+    'coming' => 'på-vej',
+
     'services' => 'services',
 
     'about' => 'om-os',
