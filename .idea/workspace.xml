@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37d1a9ec-c029-4b77-8958-ca6789c050bc" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/cute-mr-dragon-thanks-page.png" afterPath="$PROJECT_DIR$/public/images/cute-mr-dragon-success-page.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/confirmations/form/success.blade.php" afterPath="$PROJECT_DIR$/resources/views/confirmations/form/success.blade.php" />
-    </list>
+    <list default="true" id="37d1a9ec-c029-4b77-8958-ca6789c050bc" name="Default" comment="" />
     <ignored path="dragonlancers.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
