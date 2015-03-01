@@ -366,6 +366,34 @@
     </url>
 
     <url>
+        <loc>https://www.dragonlancers.com/en/blog/authors/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/forfattere/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/blog/authors/"
+                />
+    </url>
+
+    <url>
+        <loc>https://www.dragonlancers.com/da/blog/forfattere/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/blog/authors/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/forfattere/"
+                />
+    </url>
+
+    <url>
         <loc>https://www.dragonlancers.com/en/blog/welcome-to-the-new-blog/</loc>
         <xhtml:link
                 rel="alternate"
