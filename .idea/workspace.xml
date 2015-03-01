@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37d1a9ec-c029-4b77-8958-ca6789c050bc" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/cute-mr-dragon-thanks-page.png" afterPath="$PROJECT_DIR$/public/images/cute-mr-dragon-success-page.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/confirmations/form/success.blade.php" afterPath="$PROJECT_DIR$/resources/views/confirmations/form/success.blade.php" />
     </list>
     <ignored path="dragonlancers.iws" />
@@ -37,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/confirmations/form/success.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.21156374" vertical-offset="0" max-vertical-offset="761">
-              <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+              <caret line="7" column="101" selection-start-line="7" selection-start-column="101" selection-end-line="7" selection-end-column="101" />
               <folding />
             </state>
           </provider>
@@ -1150,7 +1151,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/confirmations/form/success.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21156374" vertical-offset="0" max-vertical-offset="761">
-          <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+          <caret line="7" column="101" selection-start-line="7" selection-start-column="101" selection-end-line="7" selection-end-column="101" />
           <folding />
         </state>
       </provider>
