@@ -170,6 +170,30 @@
   }
 }
 
+.quote
+{
+  margin: 1.5em;
+  border: .15em solid $grey;
+  width: 100%;
+  align-self: center;
+  & p
+  {
+    margin: auto;
+    padding: 1.5em;
+    font-style: italic;
+    font-size: 2em;
+  }
+  & p:first-child::before, p:first-child::after
+  {
+      content: '"';
+  }
+  & p:nth-child(2)
+  {
+    padding-top: 0;
+  }
+
+}
+
 .article-data
 {
   padding-bottom: 5%;
