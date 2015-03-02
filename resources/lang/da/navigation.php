@@ -28,7 +28,7 @@ return array(
 
     'subscriptions' => 'ABONNEMENTER',
 
-    'subscripe' => 'ABONN',
+    'subscripe' => 'ABNN',
 
     'get-in-touch' => 'Kom i kontakt',
 
