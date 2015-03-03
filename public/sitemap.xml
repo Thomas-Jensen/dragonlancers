@@ -505,5 +505,33 @@
                 />
     </url>
 
+    <url>
+        <loc>https://www.dragonlancers.com/en/blog/the-picture-element/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/picture-elementet/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/blog/the-picture-element/"
+                />
+    </url>
+
+    <url>
+        <loc>https://www.dragonlancers.com/da/blog/picture-elementet/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/blog/the-picture-element/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/picture-elementet/"
+                />
+    </url>
+
 
 </urlset>
