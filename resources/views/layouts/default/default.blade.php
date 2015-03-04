@@ -6,7 +6,7 @@
     @include('layouts.default.hreflang')
     <link rel="icon" type="image/png" href="{{ asset('images/build/dl-favicon-flame.png') }}">
     <link href="{{ elixir('css/app.css') }}" type="text/css" rel="stylesheet">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>``
     <script src="{{ elixir('js/app.js') }}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/picturefill/2.0.0/picturefill.min.js"></script>
     <script>
