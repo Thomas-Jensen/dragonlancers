@@ -533,5 +533,32 @@
                 />
     </url>
 
+    <url>
+        <loc>https://www.dragonlancers.com/en/blog/when-is-the-right-time-to-start-a-business/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/den-rette-tid-at-starte-forretning/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/blog/when-is-the-right-time-to-start-a-business"
+                />
+    </url>
+
+    <url>
+        <loc>https://www.dragonlancers.com/da/blog/den-rette-tid-at-starte-forretning/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/blog/when-is-the-right-time-to-start-a-business/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/den-rette-tid-at-starte-forretning/"
+                />
+    </url>
 
 </urlset>
