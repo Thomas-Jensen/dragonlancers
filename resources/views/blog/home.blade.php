@@ -48,7 +48,7 @@
         <article class="blog-posts">
             <header class="blog-link {{ $article->category }}-line">
                 <h2 class="{{ $article->category }} article-category">
-                    <a href="blog/{{ $article->category }}">{{ $article->category }}</a>
+                    <a href="{{ action('ArticlesController@' . $article->category) }}">{{ $article->category }}</a>
                 </h2>
             </header>
             <div class="article-header">
