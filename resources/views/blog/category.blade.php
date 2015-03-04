@@ -9,7 +9,7 @@
 
 @section('content')
 
-@extends('layouts.blog.nav')
+@include('layouts.blog.nav')
 
 
 
