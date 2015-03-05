@@ -561,4 +561,32 @@
                 />
     </url>
 
+    <url>
+        <loc>https://www.dragonlancers.com/en/blog/do-not-stop-using-jquery/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/lad-være-med-at-stoppe-med-at-bruge-jquery/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/blog/do-not-stop-using-jquery"
+                />
+    </url>
+
+    <url>
+        <loc>https://www.dragonlancers.com/da/blog/lad-være-med-at-stoppe-med-at-bruge-jquery/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/blog/do-not-stop-using-jquery/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/lad-være-med-at-stoppe-med-at-bruge-jquery/"
+                />
+    </url>
+
 </urlset>

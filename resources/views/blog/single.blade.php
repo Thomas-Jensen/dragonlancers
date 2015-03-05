@@ -1,17 +1,37 @@
 @extends('layouts.default.default')
-
+@section('html') <html itemscope itemtype="http://schema.org/Article" @stop
 @section('head')
-    <meta name="Description" content="{{ trans('description.home') }}">
-    <title> @if(laravelLocalization::getCurrentLocale() == 'da')
-            @if ($article->title_da !== '')
-                {{ $article->title_da }}
-            @else
-                {{ $article->title_en }}
-            @endif
-        @else
-            {{ $article->title_en }}
-        @endif
-    </title>
+        <title>@if(laravelLocalization::getCurrentLocale() == 'da'){{ $article->title_da }}@else{{ $article->title_en }}@endif</title>
+        <meta name="Description" content="@if(laravelLocalization::getCurrentLocale() == 'da'){{ strip_tags(str_limit($article->body_da, 155)) }}@else{{ strip_tags(str_limit($article->body_en, 155)) }}@endif">
+
+        <!-- Schema.org markup -->
+        <meta itemprop="name" content="@if(laravelLocalization::getCurrentLocale() == 'da'){{ $article->title_da }}@else{{ $article->title_en }}@endif">
+        <meta itemprop="description" content="@if(laravelLocalization::getCurrentLocale() == 'da'){{ strip_tags(str_limit($article->body_da, 155)) }}@else{{ strip_tags(str_limit($article->body_en, 155)) }}@endif">
+        <meta itemprop="image" content="https://www.dragonlancers.com/images/blog/{{$article->category}}">
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@dragonlancersco">
+        <meta name="twitter:title" content="@if(laravelLocalization::getCurrentLocale() == 'da'){{ $article->title_da }}@else{{ $article->title_en }}@endif">
+        <meta name="twitter:description" content="@if(laravelLocalization::getCurrentLocale() == 'da'){{ strip_tags(str_limit($article->body_da, 200)) }}@else{{ strip_tags(str_limit($article->body_en, 200)) }}@endif">
+        <meta name="twitter:creator" content="@dragonlancersco">
+        <!-- Twitter summary card with large image must be at least 280x150px -->
+        <meta name="twitter:image:src" content="https://www.dragonlancers.com/images/blog/{{$article->category}}">
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="@if(laravelLocalization::getCurrentLocale() == 'da'){{ $article->title_da }}@else{{ $article->title_en }}@endif"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content="{{URL()}}"/>
+        <meta property="og:image" content="https://www.dragonlancers.com/images/blog/{{$article->category}}" />
+        <meta property="og:description" content="@if(laravelLocalization::getCurrentLocale() == 'da'){{ strip_tags(str_limit($article->body_da, 297)) }}@else{{ strip_tags(str_limit($article->body_en, 297)) }}@endif"/>
+        <meta property="og:site_name" content="Dragon Lancers" />
+        <meta property="article:published_time" content="{{ $article->published_at }}" />
+        <meta property="article:modified_time" content="{{ $article->updated_at }}" />
+        <meta property="article:section" content="{{ $article->category }}" />
+        <meta property="article:tag" content="{{ $article->category }}" />
+        <meta property="fb:admins" content="100001461555837"/>
+
+
 @stop
 
 @section('content')
@@ -29,13 +49,9 @@
                 </div>
                     <h2 class="article-title">
                         @if(laravelLocalization::getCurrentLocale() == 'da')
-                            @if ($article->title_da !== '')
                                 {{ $article->title_da }}
-                            @else
-                                {{ $article->title_en }}
-                            @endif
                         @else
-                            {{ $article->title_en }}
+                                {{ $article->title_en }}
                         @endif
                     </h2>
 

@@ -1,8 +1,9 @@
 @extends('layouts.default.default')
 
 @section('head')
-    <meta name="Description" content="{{ trans('description.home') }}">
     <title>Dragon Lancers | {{ trans('title.creative-agency') }}</title>
+    <meta name="Description" content="{{ trans('description.home') }}">
+
 @stop
 
 @section('content')

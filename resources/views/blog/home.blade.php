@@ -1,8 +1,8 @@
 @extends('layouts.default.default')
 
 @section('head')
-    <meta name="Description" content="{{ trans('description.home') }}">
     <title>Dragon Lancers | {{ trans('title.blog') }}</title>
+    <meta name="Description" content="{{ trans('description.home') }}">
     <script>
         $(function(){
             $(".typed-php").typed({
