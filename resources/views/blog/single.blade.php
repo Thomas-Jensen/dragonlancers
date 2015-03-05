@@ -21,9 +21,8 @@
         <!-- Open Graph data -->
         <meta property="og:title" content="@if(laravelLocalization::getCurrentLocale() == 'da'){{ $article->title_da }}@else{{ $article->title_en }}@endif"/>
         <meta property="og:type" content="article"/>
-        <meta property="og:url" content="{{ Request::URL()}}"/>
         <meta property="og:image" content="https://www.dragonlancers.com/images/blog/{{$article->category}}.png" />
-        <meta property="og:description" content="@if(laravelLocalization::getCurrentLocale() == 'da'){{ strip_tags(str_limit($article->body_da, 297)) }}@else{{ strip_tags(str_limit($article->body_en, 297)) }}@endif"/>
+        <meta property="og:description" content="@if(laravelLocalization::getCurrentLocale() == 'da'){{ strip_tags(str_limit($article->body_da, 200)) }}@else{{ strip_tags(str_limit($article->body_en, 200)) }}@endif"/>
         <meta property="og:site_name" content="Dragon Lancers" />
         <meta property="article:published_time" content="{{ $article->published_at }}" />
         <meta property="article:modified_time" content="{{ $article->updated_at }}" />
