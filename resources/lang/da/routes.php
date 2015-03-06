@@ -24,6 +24,9 @@ return array(
 
     'authors' => 'blog/forfattere',
 
+    'authors-home' => 'forfattere',
+
+
 
 
 

@@ -2,6 +2,8 @@
 
 @section('content')
 
+
+
     @include('layouts.blog.nav')
 
 

@@ -27,6 +27,7 @@ Route::group(
     Route::get(LaravelLocalization::transRoute('routes.services'), 'PagesController@services');
     Route::get(LaravelLocalization::transRoute('routes.about'), 'PagesController@about');
     Route::get(LaravelLocalization::transroute('routes.authors'), 'AuthorsController@index');
+    Route::get(LaravelLocalization::transroute('routes.authors-home'), 'AuthorsController@index');
     Route::get(LaravelLocalization::transroute('routes.coming'), 'PagesController@coming');
     Route::get('browser', 'PagesController@browser');
     Route::post('contact', 'EmailController@contact');

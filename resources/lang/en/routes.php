@@ -26,6 +26,8 @@ return array(
 
     'authors' => 'blog/authors',
 
+    'authors-home' => 'authors',
+
     'admin' => 'admin',
 
 
