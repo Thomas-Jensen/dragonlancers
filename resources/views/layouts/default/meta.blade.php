@@ -22,4 +22,6 @@
 <meta property="og:image" content="{{ $image }}" />
 <meta property="og:description" content="{{ $descriptionOpengraph }}" />
 <meta property="og:site_name" content="Dragon Lancers" />
+<meta property="og:locale" content="@if(laravelLocalization::getCurrentLocale() == 'da') {{ 'da_DK' }} @else {{ 'en_US' }}@endif" />
+<meta property="og:locale:alternate" content="@if(laravelLocalization::getCurrentLocale() == 'da') {{ 'en_US' }} @else {{ 'da_DK' }}@endif" />
 <meta property="fb:admins" content="100001461555837"/>

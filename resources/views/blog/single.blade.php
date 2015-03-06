@@ -1,5 +1,4 @@
 @extends('layouts.default.default')
-@section('html') <html itemscope itemtype="http://schema.org/Article" @stop
 @section('head')
         <title>@if(laravelLocalization::getCurrentLocale() == 'da'){{ $article->title_da }}@else{{ $article->title_en }}@endif</title>
         <meta name="Description" content="@if(laravelLocalization::getCurrentLocale() == 'da'){{ strip_tags(str_limit($article->body_da, 155)) }}@else{{ strip_tags(str_limit($article->body_en, 155)) }}@endif">
@@ -25,6 +24,10 @@
         <meta property="og:image" content="https://www.dragonlancers.com/images/blog/{{$article->category}}-category.png" />
         <meta property="og:description" content="@if(laravelLocalization::getCurrentLocale() == 'da'){{ strip_tags(str_limit($article->body_da, 200)) }}@else{{ strip_tags(str_limit($article->body_en, 200)) }}@endif"/>
         <meta property="og:site_name" content="Dragon Lancers" />
+        <meta property="og:locale" content="@if(laravelLocalization::getCurrentLocale() == 'da') {{ 'da_DK' }} @else {{ 'en_US' }}@endif" />
+        <meta property="og:locale:alternate" content="@if(laravelLocalization::getCurrentLocale() == 'da') {{ 'en_US' }} @else {{ 'da_DK' }}@endif" />
+        <meta property="article:author" content="{{ $author->facebook }}" />
+        <meta property="article:publisher" content="https://www.facebook.com/DragonLancers" />
         <meta property="article:published_time" content="{{ $article->published_at }}" />
         <meta property="article:modified_time" content="{{ $article->updated_at }}" />
         <meta property="article:section" content="{{ $article->category }}" />
@@ -33,6 +36,7 @@
 
 
 @stop
+@section('html') <html itemscope itemtype="http://schema.org/Article" @stop
 
 @section('content')
 

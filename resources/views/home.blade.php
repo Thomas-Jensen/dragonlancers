@@ -1,5 +1,7 @@
 @extends('layouts.default.default')
 
+@section('head')
+
 @include('layouts.default.meta',
 [
     $title = 'Dragon Lancers | ' . trans('title.creative-agency'),
@@ -10,8 +12,6 @@
     $descriptionOpengraph = trans('description.home-opengraph'),
     $image = 'https://www.dragonlancers.com/images/dl-logo.png'
 ])
-
-@section('head')
 
 @stop
 

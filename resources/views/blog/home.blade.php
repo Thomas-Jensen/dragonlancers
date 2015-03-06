@@ -1,5 +1,7 @@
 @extends('layouts.default.default')
 
+@section('head')
+
 @include('layouts.default.meta',
 [
     $title = 'Dragon Lancers | ' . trans('title.blog'),
@@ -10,8 +12,6 @@
     $descriptionOpengraph = trans('description.blog-opengraph'),
     $image = 'https://www.dragonlancers.com/images/dl-logo.png'
 ])
-
-@section('head')
     <script>
         $(function(){
             $(".typed-php").typed({

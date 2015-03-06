@@ -2,11 +2,21 @@
 
 
 @section('content')
-<div class="container-fluid">
+    <section class="blog-menu-container">
+
+        <h1 class="dl"><a href="{{ url(LaravelLocalization::getCurrentLocale().'/'.'blog') }}">DRAGON LANCERS</a></h1>
+        <h2 class="ca"><a href="{{ url(LaravelLocalization::getCurrentLocale().'/'.'blog') }}">{{ trans('dragonlancers.ca') }} BLOG</a></h2>
+
+
+        <h1>Login:</h1>
+
+
+
+    </section>
+<section class="container-fluid center">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Login</div>
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
@@ -60,5 +70,5 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 @stop

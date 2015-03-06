@@ -48,9 +48,26 @@
         {!! Form::textarea('description_da', '', ['class' => 'form-control', 'required', 'maxlength' => '150']) !!}
     </div>
 
+    <!-- Facebook Form Input -->
+    <div class="form-group">
+        {!! Form::label('facebook', 'Facebook:') !!}
+        {!! Form::text('facebook', '', ['class' => 'form-control']) !!}
+    </div>
+
+    <!-- Googleplus Form Input -->
+    <div class="form-group">
+        {!! Form::label('googleplus', 'Googleplus:') !!}
+        {!! Form::text('googleplus', '', ['class' => 'form-control']) !!}
+    </div>
+
+    <!-- Twitter Form Input -->
+    <div class="form-group">
+        {!! Form::label('twitter', 'Twitter:') !!}
+        {!! Form::text('twitter', '', ['class' => 'form-control']) !!}
+    </div>
 
 
-    <!-- Add Author Form Input -->
+        <!-- Add Author Form Input -->
     <div class="form-group">
         {!! Form::submit('Add Author', ['class' => 'form-control']) !!}
     </div>

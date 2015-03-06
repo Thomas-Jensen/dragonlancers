@@ -9,7 +9,10 @@ class Author extends Model {
         'image',
         'description_en',
         'description_da',
-        'slug_author'
+        'slug_author',
+        'facebook',
+        'googleplus',
+        'twitter',
 
     ];
 
