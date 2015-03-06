@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37d1a9ec-c029-4b77-8958-ca6789c050bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthorsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthorsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blog/authors/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/blog/authors/home.blade.php" />
     </list>
     <ignored path="dragonlancers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AuthorsController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthorsController.php">
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/blog/authors/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.624031" vertical-offset="2162" max-vertical-offset="3243">
-              <caret line="121" column="9" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.118863046" vertical-offset="0" max-vertical-offset="1311">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -51,7 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/errors/500.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/errors/502.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/errors/503.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/errors/coming.blade.php" />
@@ -102,6 +101,7 @@
         <option value="$PROJECT_DIR$/resources/views/blog/authors/edit.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_03_06_171617_add_socialmedia_tables_to_authors_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AuthorsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/blog/authors/home.blade.php" />
       </list>
     </option>
   </component>
@@ -389,13 +389,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/confirmations/form/success.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21156374" vertical-offset="0" max-vertical-offset="761">
-          <caret line="7" column="101" selection-start-line="7" selection-start-column="101" selection-end-line="7" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/lang/en/dragonlancers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56459945" vertical-offset="0" max-vertical-offset="782">
@@ -1621,6 +1614,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.624031" vertical-offset="2162" max-vertical-offset="3243">
           <caret line="121" column="9" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+          <folding>
+            <marker date="1425663328000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder=" Display a listing of the resource. ..." />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder=" Show the form for creating a new resource. ..." />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder=" Store a newly created resource in storage. ..." />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder=" Display the specified resource. ..." />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder=" Show the form for editing the specified resource. ..." />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder=" Update the specified resource in storage. ..." />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder=" Remove the specified resource from storage. ..." />
+            <marker date="1425663328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/blog/authors/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.118863046" vertical-offset="0" max-vertical-offset="1311">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
