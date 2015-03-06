@@ -1,8 +1,16 @@
 @extends('layouts.default.default')
 
+@include('layouts.default.meta',
+[
+    $title = 'Dragon Lancers | ' . trans('title.creative-agency'),
+    $description = trans('description.home'),
+    $descriptionSchemaorg  = trans('description.home-schemaorg'),
+    $descriptionTwitter = trans('description.home-twitter'),
+    $typeOpengraph = 'website',
+    $descriptionOpengraph = trans('description.home-opengraph'),
+])
+
 @section('head')
-    <title>Dragon Lancers | {{ trans('title.creative-agency') }}</title>
-    <meta name="Description" content="{{ trans('description.home') }}">
 
 @stop
 

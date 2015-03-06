@@ -29,6 +29,10 @@ return array(
 
     'blog' => 'Blog',
 
+    'about-us' => 'About-Us',
+
+
+
 
 
 

@@ -1,10 +1,14 @@
 @extends('layouts.default.default')
 
-
-@section('head')
-    <meta name="Description" content="{{ trans('description.home') }}">
-    <title>Dragon Lancers | Blog | {{ ucwords($category) }}</title>
-@stop
+@include('layouts.default.meta',
+[
+    $title = 'Dragon Lancers | Blog | '  .ucwords($category),
+    $description = trans('description.home'),
+    $descriptionSchemaorg  = trans('description.home'),
+    $descriptionTwitter = trans('description.home'),
+    $typeOpengraph = 'website',
+    $descriptionOpengraph = trans('description.home'),
+])
 
 
 @section('content')
