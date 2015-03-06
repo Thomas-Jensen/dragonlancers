@@ -120,10 +120,6 @@ class AuthorsController extends Controller {
 
             $input['image'] = $name;
         }
-        elseif (Input::hasFile('image') == false)
-        {
-            $input['image'] = 'noimage.png';
-        }
 
         $author->update($input);
 
