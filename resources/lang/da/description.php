@@ -21,91 +21,91 @@ return array(
 
     'services' => 'Vi tilbyder topmoderne løsninger, for klienter der søger det bedste af web, apps, print og skræddersyede abonnements løsninger.',
 
-    'services-schemaorg' => 'We offer the very latest, state of the art web solutions, tailored web applications, native apps, and also highly tailored subscriptions for our clients.',
+    'services-schemaorg' => 'Vi tilbyder de nyeste, og bedste web løsninger, skræddersyede web applikationer, mobile apps, og også abonnementer for vores klienter.',
 
-    'services-twitter' => 'We offer the very latest and greatest in web solutions, as well as custom apps, print and subscription services for our clients.',
+    'services-twitter' => 'Vi tilbyder det nyeste og bedste i web løsninger, vi tilbyder også mobile apps, print og abonnements services for vores klienter.',
 
-    'services-opengraph' => 'We offer modern state of the art solutions, for clients seeking the very best of web, apps, print and also tailored subscription services. We service small, medium and large business mainly, but individuals as well',
+    'services-opengraph' => 'Vi tilbyder top moderne løsninger, for vores klienter der søger det bedste af web, apps, print og skræddersyede abonnements løsninger. Vi servicerer små, medium og store virksomheder, men også individer.',
 
-    'about' => 'We are a startup dedicated to creating awesome experiences on the web, we love what we do and do it with passion, we are completely dedicated to our clients.',
+    'about' => 'Vi er en startup dedikeret til at skabe awesome oplevelser på nettet, vi elsker hvad vi laver og gør det med passion. Vi er totalt dedikeret til vores klienter.',
 
-    'about-schemaorg' => 'We are a highly skilled, both technically and design wise. We develop the very best for the internet, we a burning passion for all that we create.',
+    'about-schemaorg' => 'Vi er gode til det vi laver, både teknisk og designmæssigt. Vi udvikler det allerbedste til nettet. Vi har en brændende passion for alt det vi skaber.',
 
-    'about-twitter' => 'We are a creative startup, dedicated to creating great experiences and content for the internet. For our clients and their every need.',
+    'about-twitter' => 'Vi er en kreativ startup, dedikeret til at skabe kanon oplevelser og content for internettet. For vores klienter og ethvert af deres behov.',
 
-    'about-opengraph' => 'We are a startup dedicated to creating awesome experiences on the web, we love what we do and do it with passion, we are completely dedicated to our clients. We serve all sizes of businesses and individuals',
+    'about-opengraph' => 'Vi er en startup der er dedikeret til at skabe awesome oplevelser på nettet. Vi elsker hvad vi laver og gør det med passion. Vi er totalt dedikeret til vores klienter. Vi servicerer all størrelser af virksomheder og individer.',
 
-    'blog' => 'Our company blog is the place of relevant topics and discussions, related to all of the major main fields we work in. We share our experiences and insight.',
+    'blog' => 'Vores firma blog er stedet for relevante emner og diskussioner, relateret til alle hovedfelterne vi arbejder i. Vi deler vores oplevelser og indsigt.',
 
-    'blog-schemaorg' => 'Our blog is a place of relevant up to day topics and discussions, mainly related to the main fields we work in and with every day. We share our experience and give insights in relevant topics, and give guides.',
+    'blog-schemaorg' => 'Vores blog er et sted for relevante emner og diskussioner, hovedsageligt relateret til de felter vi arbejder i hver dag. Vi deler vores erfaring og giver indsigt i relevante emner, og guides.',
 
-    'blog-twitter' => 'Our blog is the place we share topics related to our daily lives, stuff relevant to like-minded people and clients alike.',
+    'blog-twitter' => 'Vores blog er stedet vi deler emner relateret til vores daglige liv, ting relevant for ligesindede mennesker og klienter.',
 
-    'blog-opengraph' => 'Our company blog is the place we share our experience, and experiences, we give insights in the daily lives we live and the relevant topics in our field. For us, our clients and like-minded.',
+    'blog-opengraph' => 'Vores firma blog er stedet vi deler vores erfaringer og oplevelser, vi giver indsigt i det daglige liv vi lever og i de relevante emner i vores felt. For os selv, vores klienter og ligesindede.',
 
-    'php' => 'We love PHP it is our favorite language for creating dynamic awesome web sites, we share our experiences, news in the industry and tips and tricks.',
+    'php' => 'Vi elsker PHP det er vores favorit sprog for at skabe dynamiske awesome web sites. Vi deres vores erfaringer, nyheder i industrien, tips of tricks.',
 
-    'php-schemaorg' => 'We love coding in PHP it is our favorite language for creating awesome web applications, we share the latest news, tips and tricks for getting the most the easiest.',
+    'php-schemaorg' => 'Vi elsker at kode i PHP det er vores favorit sprog for at skabe awesome web applikationer, vi deler de seneste nyheder, tips og tricks for at gøre det meste lettest.',
 
-    'php-twitter' => 'We love PHP, we share tips and tricks, relevant php news and give tutorials on how to get the most and best out of your time and effort.',
+    'php-twitter' => 'Vi elsker PHP, vi deler tips og tricks, relevante php nyheder og giver tutorials på hvordan man får det meste og bedste ud af sin tid og indsats.',
 
-    'php-opengraph' => 'We love PHP it is our favorite language for creating dynamic awesome web sites, we share our experiences, news in the industry and tips and tricks. Anything from basic echo to complicated things in laravel.',
+    'php-opengraph' => 'Vi elsker PHP det er vores favorit sprog for at skabe awesome dynamiske web sites, vi deler vores erfaringer, nyheder i industrien, tips og tricks. Alt fra begynder echo til komplicerede ting i laravel.',
 
-    'html' => 'The internet would not really be the same without being able to see the content, we put great price on doing correct mock-up, and we share our knowledge.',
+    'html' => 'Internettet vill ikke rigtigt være det samme uden at kunne se indholder, vi sætter stor pris på at lave korrekt mock-up, og vi deler vores viden.',
 
-    'html-schemaorg' => 'Without html for mocking up content, the web would truly not be as entertaining, we share our knowledge of html, including the latest features and knowledge.',
+    'html-schemaorg' => 'Uden html til at lave mock-up for vores indhold, ville nettet uden tvivl ikke være så underholdende. Vi deler vores viden om html, og de seneste features og viden.',
 
-    'html-twitter' => 'Html is a cornerstone of the racing fast modern web, we share here our knowledge and expertize at writing syntactically correct mock-up.',
+    'html-twitter' => 'Html er en hjørnesten af det hurtige moderne web, vi deler vores viden og ekspertise indenfor html og det at skrive syntaktisk korrekt mock-up.',
 
-    'html-opengraph' => 'The internet would not really be the same without being able to see the content, we put great price on doing correct mock-up, and we share our knowledge. We give tutorials and tricks.',
+    'html-opengraph' => 'Internettet ville ikke rigtigt være det samme uden at kunne se indholdet. Vi sætter stor pris på at lave korrekt mock-up, og vi deler vores viden. Vi giver tutorials og tricks.',
 
-    'css' => 'CSS - Cascading Style Sheets is a bedrock of websites, of web applications, it is something which without our web would be truly boring to look at.',
+    'css' => 'CSS - Cascading Style Sheets er en del af fundamentet af hjemmesider, af web applikationer, det er noget som foruden vores web ville være kedeligt at se på.',
 
-    'css-schemaorg' => 'CSS is crucial to any web application, even the most simple website needs to look the part. We share tricks, tips, and our combined knowledge to help and enlighten.',
+    'css-schemaorg' => 'CSS er en vigtig del af enhver web applikation, selv den mest simple website behøver at se godt ud. Vi deler tricks, tips og vores samlede viden til hjælp og oplysning.',
 
-    'css-twitter' => 'CSS is a cornerstone of modern web, it is something we take for granted, but really is all-important, we share tips, tricks, and knowledge of it.',
+    'css-twitter' => 'CSS er en hjørnesten af det moderne web, det er noget vi tager for givet, men virkeligt at vigtigt. Vi deler tips, tricks og viden omkring det.',
 
-    'css-opengraph' => 'CSS - Cascading Style Sheets is a bedrock of websites, of web applications, it is something which without our web would be truly boring to look at. We share our experience at css and give some neat tricks and tips.',
+    'css-opengraph' => 'CSS - Cascading Style Sheets er en hjørnesten af hjemmesider, af web applikationer. Det er noget som foruden nettet ville være meget kedeligt at se på. Vi deler vores erfaring med css og giver nogle fede tricks og tips.',
 
-    'javascript' => 'Javascript is another cornerstone of modern civilization, our browsers parse it every day, we share guides, news and tricks and tips related to js.',
+    'javascript' => 'Javascript er en anden hjørnesten af den moderne civilisation, vores browsere parser det hver eneste dag. Vi deler guides, nyheder og tips og tricks relateret til js.',
 
-    'javascript-schemaorg' => 'Javascript is something we all love and use to create awesome web applications, we share our knowledge and give some tips and guides on all the new.',
+    'javascript-schemaorg' => 'Javascript er noget vi alle elsker og bruger for at skabe awesome web applikationer. Vi deler vores viden og giver nogle tips og guides om alt det vi ved.',
 
-    'javascript-twitter' => 'Javascript is a necessity for modern web life, we use it all the time, and here on the blog we share news, tricks and tips related to all-things js. ',
+    'javascript-twitter' => 'Javascript er en nødvendighed for det moderne web liv, vi bruger det hele tiden, og her på bloggen deler vi nyheder, tips og tricks relateret til alle ting omkring js.',
 
-    'javascript-opengraph' => 'Javascript is another cornerstone of modern civilization, our browsers parse it every day, we share guides, news and tricks and tips related to js. Anything from vanilla js to the latest frameworks, jQuery, even animations.',
+    'javascript-opengraph' => 'Javascript er en anden hjørnesten af den moderne civilisation, vores browsere parser det hver dag. Vi deler guides, nyheder og tips og tricks relateret til js. Alt fra vanilla ja til de seneste frameworks, jQuery og selv animationer.',
 
-    'design' => 'Our motto is: Design is the power that creates opinion, we share modern up-to-date design knowledge, how-to tutorials and a bunch of design oriented stuff.',
+    'design' => 'Vores motto er: Design er kraften der skaber holdning. Vi deler modern design viden, tutorials, og en masse design relateret.',
 
-    'design-schemaorg' => 'Our motto is: Design is the power that creates opinion, we share modern up-to-date design knowledge, mobile first, content first, we show it all.',
+    'design-schemaorg' => 'Vores motto er: Design er kraften der skaber holdning. Vi deler modern design viden, mobile first, content first, vi viser det hele.',
 
-    'design-twitter' => 'Our motto is: Design is the power that creates opinion, in the modern fast paced world, design is everything really.',
+    'design-twitter' => 'Vores motto er: Design er kraften der skaber holdning. I den moderne stressede verden er design i alt vi berører.',
 
-    'design-opengraph' => 'Our motto is: Design is the power that creates opinion, we share modern up-to-date design knowledge, how-to tutorials and a bunch of design oriented stuff. If you love design, this is a great place to be.',
+    'design-opengraph' => 'Vores motto er: Design er kraften der skaber holdning. Vi deler modern design viden, tutorials, og en masse design relateret. Hvis du elsker design er dette stedet at være.',
 
-    'seo' => 'SEO is another cornerstone in modern web, it is something which is very easy to do wrong, we show the right ways, the way which works and creates results.',
+    'seo' => 'SEO er en anden hjørnesten af det moderne web, det er noget der er meget let at gøre forkert. Vi viser den rigtige vej, vejen der virker og skaber resultater.',
 
-    'seo-schemaorg' => 'SEO is a great cornerstone of modern web, we give examples, and tutorials, best-practices, and the latest news and trends in the world.',
+    'seo-schemaorg' => 'SEO er en anden hjørnesten af det moderne web. Vi giver eksempler, tutorials, best-practices, og det seneste nyheder og trends verden rundt.',
 
-    'seo-twitter' => 'SEO is all-important in our fast paced lives, if you cannot be found online - you do not exist. We help clients be found and stay at the top.',
+    'seo-twitter' => 'SEO er en af de vigtigste ting i vores stressede liv. Hvis du ikke kan findes online, eksisteret du ikke. Vi hjælper klienter med at blive fundet og blive i toppen.',
 
-    'seo-opengraph' => 'SEO is another cornerstone in modern web, it is something which is very easy to do wrong, we show the right ways, the way which works and creates results. Organic traffic, and correct use of social media to our advantage.',
+    'seo-opengraph' => 'SEO er en anden hjørnesten i det moderne web, det er noget der et let at gøre forkert. Vi viser de rigtige veje og metoder, vejene der virker og skaber resultater. Organisk trafik og korrekt brug af sociale medier til vores fordel.',
 
-    'business' => 'We give business tips, news, we love the world of business, and we give tutorials, interviews and much more on the business blog.',
+    'business' => 'Vi giver forretnings tips, nyheder, vi elsker forretnings verdenen, og vi giver tutorials, interviews og meget mere her på vores business blog.',
 
-    'business-schemaorg' => 'Business is the whole point of starting a business, we give tips, industrial advice and the latest trends and know-how.',
+    'business-schemaorg' => 'Business er hele pointen med at starte en forretning. Vi giver tips, industrielle råd og de seneste trends og know-how.',
 
-    'business-twitter' => 'Managing a modern business in these times, can be both stressful and hard, but it should not be, we give tips and advice on business matters.',
+    'business-twitter' => 'Business management i disse tider, kan være både stressfuldt og hårdt. Men det behøver det ikke være, vi giver tips og råd i business henseende.',
 
-    'business-opengraph' => 'We give business tips, news, we love the world of business, and we give tutorials, interviews and much more on the business blog. Anything from starting up, to managing hundreds of workers around the globe.',
+    'business-opengraph' => 'Vi giver business tips, nyheder, vi elsker forretningsverdenen. Og vi giver tutorials, interviews og meget mere her på vores business blog. Alt fra startup, til at have hundredvis af medarbejdere jorden rundt.',
 
-    'news' => 'News from Dragon Lancers, for both our clients and all interested parties. We keep you up to day with what is happening here and important news from the world.',
+    'news' => 'Nyheder fra Dragon Lancers. Både for vores klienter og for alle andre interesserede parter. Vi holder dig up to date med hvad der sker her, og vigtige nyheder verden rundt.',
 
-    'news-schemaorg' => 'Here is the news from us Dragon Lancers, it is for the benefit of clients, business associates, and all other interested parties.',
+    'news-schemaorg' => 'Her er nyhederne fra os Dragon Lancers, det er til gavn for forretnigspartnere, klienter og alle andre interesserede parter.',
 
-    'news-twitter' => 'News are important to stay up to date, here you can get ours, it is for clients, business partners and all interested parties alike.',
+    'news-twitter' => 'News er vigtige for at holde sig opdateret, her kan du få vores, det er for clients, forretnings partnere og alle interesserede parter.',
 
-    'news-opengraph' => 'News from Dragon Lancers, for both our clients and all interested parties. We keep you up to day with what is happening here and important news from around the world. Do not miss a thing here.',
+    'news-opengraph' => 'News fra Dragon Lancers, for både vores klienter og alle interested parter. Vi holder dig opdaterer med hvad der sker her, og vigtige nyheder fra verden. Gå ikke glip af noget her.',
 
 
 );

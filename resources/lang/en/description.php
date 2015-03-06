@@ -29,7 +29,7 @@ return array(
 
     'about' => 'We are a startup dedicated to creating awesome experiences on the web, we love what we do and do it with passion, we are completely dedicated to our clients.',
 
-    'about-schemaorg' => 'We are a highly skilled, both technically and design wise. We develop the very best for the internet, we a burning passion for all that we create.',
+    'about-schemaorg' => 'We are highly skilled, both technically and design wise. We develop the very best for the internet, we a burning passion for all that we create.',
 
     'about-twitter' => 'We are a creative startup, dedicated to creating great experiences and content for the internet. For our clients and their every need.',
 
@@ -55,7 +55,7 @@ return array(
 
     'html-schemaorg' => 'Without html for mocking up content, the web would truly not be as entertaining, we share our knowledge of html, including the latest features and knowledge.',
 
-    'html-twitter' => 'Html is a cornerstone of the racing fast modern web, we share here our knowledge and expertize at writing syntactically correct mock-up.',
+    'html-twitter' => 'Html is a cornerstone of the racing fast modern web, we share here our knowledge and expertise at writing syntactically correct mock-up.',
 
     'html-opengraph' => 'The internet would not really be the same without being able to see the content, we put great price on doing correct mock-up, and we share our knowledge. We give tutorials and tricks.',
 
