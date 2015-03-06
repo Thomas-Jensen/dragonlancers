@@ -3,11 +3,13 @@
 @include('layouts.default.meta',
 [
     $title = 'Dragon Lancers | Blog | '  .ucwords($category),
-    $description = trans('description.home'),
-    $descriptionSchemaorg  = trans('description.home'),
-    $descriptionTwitter = trans('description.home'),
+    $description = trans('description.'.$category),
+    $descriptionSchemaorg  = trans('description.'.$category),
+    $descriptionTwitter = trans('description.'.$category),
     $typeOpengraph = 'website',
-    $descriptionOpengraph = trans('description.home'),
+    $descriptionOpengraph = trans('description.'.$category),
+    $image = 'https://www.dragonlancers.com/images/blog/' .$category .'.png'
+
 ])
 
 

@@ -8,6 +8,7 @@
     $descriptionTwitter = trans('description.home-twitter'),
     $typeOpengraph = 'website',
     $descriptionOpengraph = trans('description.home-opengraph'),
+    $image = 'https://www.dragonlancers.com/images/dl-logo.png'
 ])
 
 @section('head')

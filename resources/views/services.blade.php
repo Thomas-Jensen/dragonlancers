@@ -9,6 +9,8 @@
     $descriptionTwitter = trans('description.services-twitter'),
     $typeOpengraph = 'website',
     $descriptionOpengraph = trans('description.services-opengraph'),
+    $image = 'https://www.dragonlancers.com/images/dl-logo.png'
+
 ])
 
 
