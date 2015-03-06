@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37d1a9ec-c029-4b77-8958-ca6789c050bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/about.blade.php" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blog/category.blade.php" afterPath="$PROJECT_DIR$/resources/views/blog/category.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/da/description.php" afterPath="$PROJECT_DIR$/resources/lang/da/description.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/description.php" afterPath="$PROJECT_DIR$/resources/lang/en/description.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blog/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/blog/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/default/meta.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/default/meta.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/services.blade.php" afterPath="$PROJECT_DIR$/resources/views/services.blade.php" />
     </list>
     <ignored path="dragonlancers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,12 +33,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="description.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/lang/da/description.php">
+      <file leaf-file-name="category.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/blog/category.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5542636" vertical-offset="100" max-vertical-offset="2691">
-              <caret line="23" column="98" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.29715762" vertical-offset="0" max-vertical-offset="1863">
+              <caret line="10" column="80" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
+              <folding>
+                <marker date="1425606318000" expanded="true" signature="46:488" placeholder="..." />
+                <marker date="1425606318000" expanded="true" signature="71:487" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,10 +101,10 @@
         <option value="$PROJECT_DIR$/resources/views/services.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/about.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/blog/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/blog/category.blade.php" />
         <option value="$PROJECT_DIR$/resources/lang/en/description.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/default/meta.blade.php" />
         <option value="$PROJECT_DIR$/resources/lang/da/description.php" />
+        <option value="$PROJECT_DIR$/resources/views/blog/category.blade.php" />
       </list>
     </option>
   </component>
@@ -1063,37 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/blog/single.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7131783" vertical-offset="0" max-vertical-offset="2829">
-          <caret line="24" column="116" selection-start-line="24" selection-start-column="116" selection-end-line="24" selection-end-column="116" />
-          <folding>
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/services.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3268734" vertical-offset="0" max-vertical-offset="4600">
@@ -1406,34 +1371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/blog/category.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26744187" vertical-offset="0" max-vertical-offset="1863">
-          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-          <folding>
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425604562000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/default/meta.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41602066" vertical-offset="0" max-vertical-offset="774">
@@ -1457,7 +1394,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5542636" vertical-offset="100" max-vertical-offset="2691">
           <caret line="23" column="98" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1425606114000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425606114000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/blog/single.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7131783" vertical-offset="0" max-vertical-offset="2829">
+          <caret line="24" column="116" selection-start-line="24" selection-start-column="116" selection-end-line="24" selection-end-column="116" />
+          <folding>
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425601818000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/blog/category.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29715762" vertical-offset="0" max-vertical-offset="1863">
+          <caret line="10" column="80" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
+          <folding>
+            <marker date="1425606318000" expanded="true" signature="46:488" placeholder="..." />
+            <marker date="1425606318000" expanded="true" signature="71:487" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

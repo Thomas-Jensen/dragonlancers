@@ -8,7 +8,7 @@
     $descriptionTwitter = trans('description.'.$category),
     $typeOpengraph = 'website',
     $descriptionOpengraph = trans('description.'.$category),
-    $image = 'https://www.dragonlancers.com/images/blog/' .$category .'.png'
+    $image = 'https://www.dragonlancers.com/images/blog/' .$category .'-category.png'
 
 ])
 
