@@ -571,7 +571,7 @@
         <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.dragonlancers.com/en/blog/do-not-stop-using-jquery"
+                href="https://www.dragonlancers.com/en/blog/do-not-stop-using-jquery/"
                 />
     </url>
 
@@ -586,6 +586,34 @@
                 rel="alternate"
                 hreflang="da"
                 href="https://www.dragonlancers.com/da/blog/lad-være-med-at-stoppe-med-at-bruge-jquery/"
+                />
+    </url>
+
+    <url>
+        <loc>https://www.dragonlancers.com/en/blog/content-first/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/content-first/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/blog/content-first/"
+                />
+    </url>
+
+    <url>
+        <loc>https://www.dragonlancers.com/da/blog/content-first/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/content-first/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/content-first/"
                 />
     </url>
 
