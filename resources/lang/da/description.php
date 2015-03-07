@@ -107,5 +107,15 @@ return array(
 
     'news-opengraph' => 'News fra Dragon Lancers, for både vores klienter og alle interested parter. Vi holder dig opdaterer med hvad der sker her, og vigtige nyheder fra verden. Gå ikke glip af noget her.',
 
+    'authors' => 'Vores talentfulde forfattere skriver om relevante emner for bloggen, hver med erfaring i deres felter. Vi er altid på udkig efter talentfulde forfattere.',
+
+    'authors-schemaorg' => 'Vores forfattere har talent for deres felter, hver med teknik, praksis og teori på plads i deres felt. Vi er altid glade for at få nye talentfulde forfattere.',
+
+    'authors-twitter' => 'Vores talentfulde forfattere, med hver deres ekspertise. Giver deres input i relevante emner i deres felter. Alt sammen nemt fordøjeligt på minutter.',
+
+    'authors-opengraph' => 'Vores talentfulde forfattere skriver om relevante emner for bloggen, hver med erfaring i deres felter. Vi er altid på udkig efter talentfulde forfattere. Nemt fordøjeligt på få minutter, ikke mere søgning igennem lange tekster uden ende.',
+
+
+
 
 );

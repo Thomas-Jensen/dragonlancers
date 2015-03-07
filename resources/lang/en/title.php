@@ -31,6 +31,8 @@ return array(
 
     'about-us' => 'About-Us',
 
+    'authors' => 'Authors',
+
 
 
 

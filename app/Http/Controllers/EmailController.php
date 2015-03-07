@@ -1,4 +1,5 @@
 <?php namespace DragonLancers\Http\Controllers;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Redirect;
@@ -38,16 +39,22 @@ class EmailController extends Controller {
             }
         );
 		Mail::queue('emails.form.welcome', $data, function($message) use ($data)
-		{
-			$message->from('welcome@dragonlancers.com', 'Dragon Lancers');
-			$message->to($data['email'])->subject(trans('emails/welcome.welcome-title'));
-		}
+            {
+                $message->from('welcome@dragonlancers.com', 'Dragon Lancers');
+                $message->to($data['email'])->subject(trans('emails/welcome.welcome-title'));
+            }
 		);
         return redirect('success');
         }
         else{
             return Redirect::back()->withInput()->withErrors($validation->messages());
         }
+    }
+
+
+    public function cold()
+    {
+
     }
 
 

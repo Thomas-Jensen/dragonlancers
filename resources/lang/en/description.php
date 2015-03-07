@@ -107,4 +107,12 @@ return array(
 
     'news-opengraph' => 'News from Dragon Lancers, for both our clients and all interested parties. We keep you up to day with what is happening here and important news from around the world. Do not miss a thing here.',
 
+    'authors' => 'Our talented authors write about relevant subjects for the blog, each with experience in their fields. We are always looking for talented writers.',
+
+    'authors-schemaorg' => 'Our authors are talented in their fields, each with technical, practical and theory in check for their field. We are always happy to receive new talented writers.',
+
+    'authors-twitter' => 'Our talented writers, each with their own expertise, give their inputs of the relevant subjects in their fields, all easily digestible in minutes.',
+
+    'authors-opengraph' => 'Our talented authors write about relevant subjects for the blog, each with experience in their fields. We are always looking for talented writers. Easily digestible in mere minutes, no more searching through long texts with no end.',
+
 );

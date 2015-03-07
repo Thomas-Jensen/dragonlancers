@@ -27,6 +27,8 @@ return array(
 
     'production-process' => 'produktions proces',
 
+    'authors' => 'Forfattere',
+
 
 
 

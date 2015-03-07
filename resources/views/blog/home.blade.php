@@ -1,7 +1,16 @@
 @extends('layouts.default.default')
 
 @section('head')
-
+    @include('layouts.default.meta',
+    [
+        $title = 'Dragon Lancers | ' . trans('title.blog'),
+        $description = trans('description.blog'),
+        $descriptionSchemaorg  = trans('description.blog-schemaorg'),
+        $descriptionTwitter = trans('description.blog-twitter'),
+        $typeOpengraph = 'website',
+        $descriptionOpengraph = trans('description.blog-opengraph'),
+        $image = 'https://www.dragonlancers.com/images/dl-logo.png'
+    ])
 
     <script>
         $(function(){

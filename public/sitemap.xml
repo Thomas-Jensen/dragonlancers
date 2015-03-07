@@ -617,4 +617,32 @@
                 />
     </url>
 
+    <url>
+        <loc>https://www.dragonlancers.com/en/blog/laravel-5-is-out/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/laravel-5-er-ude/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/blog/laravel-5-is-out/"
+                />
+    </url>
+
+    <url>
+        <loc>https://www.dragonlancers.com/da/blog/laravel-5-er-ude/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/laravel-5-is-out/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/laravel-5-er-ude/"
+                />
+    </url>
+
 </urlset>

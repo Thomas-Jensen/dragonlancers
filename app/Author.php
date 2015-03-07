@@ -13,6 +13,8 @@ class Author extends Model {
         'facebook',
         'googleplus',
         'twitter',
+        'email',
+        'phone'
 
     ];
 
