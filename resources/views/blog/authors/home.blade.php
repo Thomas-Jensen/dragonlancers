@@ -78,7 +78,7 @@
                     @endif
                     @if($author->email !== '')
                     <li>
-                        <a class="googleplus share author-social" href="mailto:{{ $author->email }}">
+                        <a class="googleplus author-social" href="mailto:{{ $author->email }}">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
                                  width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
                             <g>
@@ -94,7 +94,7 @@
                     @endif
                     @if($author->phone !== '')
                     <li>
-                        <a class="googleplus share author-social" href="tel:{{ $author->phone }}">
+                        <a class="googleplus author-social" href="tel:{{ $author->phone }}">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                  width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
                             <g>
