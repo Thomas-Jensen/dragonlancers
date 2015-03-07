@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37d1a9ec-c029-4b77-8958-ca6789c050bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_03_06_234054_add_phone_and_mail_to_authors_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_03_06_234054_add_phone_and_mail_to_authors_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blog/authors/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/blog/authors/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blog/authors/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/blog/authors/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="37d1a9ec-c029-4b77-8958-ca6789c050bc" name="Default" comment="" />
     <ignored path="dragonlancers.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -39,8 +34,8 @@
       <file leaf-file-name="2015_03_06_171617_add_socialmedia_tables_to_authors_table.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/migrations/2015_03_06_171617_add_socialmedia_tables_to_authors_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56459945" vertical-offset="0" max-vertical-offset="989">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.26744187" vertical-offset="0" max-vertical-offset="989">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -481,10 +476,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="787">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1425686445000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425686445000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425686445000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1425686445000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425687861000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425687861000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425687861000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425687861000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1786,8 +1781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_03_06_171617_add_socialmedia_tables_to_authors_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56459945" vertical-offset="0" max-vertical-offset="989">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.26744187" vertical-offset="0" max-vertical-offset="989">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding />
         </state>
       </provider>
