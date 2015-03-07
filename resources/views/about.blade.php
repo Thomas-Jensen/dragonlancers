@@ -5,11 +5,11 @@
 @include('layouts.default.meta',
 [
     $title = 'Dragon Lancers | ' . trans('title.creative-agency'),
-    $description = trans('description.home'),
-    $descriptionSchemaorg  = trans('description.home'),
-    $descriptionTwitter = trans('description.home'),
+    $description = trans('description.about'),
+    $descriptionSchemaorg  = trans('description.about-schemaorg'),
+    $descriptionTwitter = trans('description.about-twitter'),
     $typeOpengraph = 'website',
-    $descriptionOpengraph = trans('description.home'),
+    $descriptionOpengraph = trans('description.about-opengraph'),
     $image = 'https://www.dragonlancers.com/images/dl-logo.png'
 ])
     <script>
