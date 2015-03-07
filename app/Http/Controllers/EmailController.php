@@ -54,7 +54,35 @@ class EmailController extends Controller {
 
     public function cold()
     {
+        //Get all data and store it in data variable
+        $data = Input::all();
 
+        //Setup rules in a rules array
+        $rules = array(
+            'name' => 'required',
+            'email' => 'required|email',
+            'messages' => 'required|min:5'
+        );
+
+        //initialize a new instance of validator with our data and rules
+        $validation = Validator::make ($data, $rules);
+
+        //run our validation against rules if passes send mail
+        if ($validation -> passes())
+        {
+
+            Mail::queue('emails.cold', $data, function($message) use ($data)
+            {
+                $message->from('thomas@dragonlancers.com', 'Thomas');
+                $message->to($data['to'])->subject('Dragon Lancers contact form');
+            }
+            );
+
+            return ('success');
+        }
+        else{
+            return Redirect::back()->withInput()->withErrors($validation->messages());
+        }
     }
 
 

@@ -5,6 +5,15 @@
   max-width: 1920px;
 }
 
+body
+{
+  padding-top: 3.75em;
+  @include bp(3)
+  {
+    padding-top: 0;
+  }
+}
+
 section
 {
   @extend .container;
@@ -18,6 +27,7 @@ section
   left: 0;
   width: 100%;
   height: 11.25em;
+  padding-top: 3.750em;;
   @include bp(1)
   {
     height: 15.25em;
@@ -29,6 +39,7 @@ section
   @include bp(3)
   {
     height: 26.25em;
+    padding-top: 0;
   }
   @include bp(4)
   {

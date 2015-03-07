@@ -31,9 +31,10 @@
 
 </head>
 <body>
-    <section class="container">
 
-        @include('layouts.default.nav')
+    @include('layouts.default.nav')
+
+    <section class="container">
 
         @yield('content')
 

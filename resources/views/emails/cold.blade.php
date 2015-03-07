@@ -4,7 +4,7 @@
 <head>
     <meta name="generator" content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>{{ trans('emails/maintenance.title') }}</title>
+    <title>{{ trans('emails/welcome.welcome-title') }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style type="text/css">
         /*<![CDATA[*/
@@ -14,14 +14,14 @@
         td.c12 {background-color: #000000; padding-left: 10%; padding-right: 10%}
         table.c11 {color: #ffffff}
         td.c10 {font-size: 0; line-height: 0;}
-        td.c9 {font-family: Helvetica, Arial, Verdana, Trebuchet MS, sans-serif; font-size: 14px; line-height: 20px;}
+        td.c9 {font-family: Helvetica, Arial, Verdana, Trebuchet MS, sans-serif; font-size: 16px; line-height: 20px;}
         td.c8 {background-color: #FCFCFC; padding-left: 10%; padding-right: 10%}
-        td.c7 {padding-top: 10%; font-family: Helvetica, Arial, Verdana, Trebuchet MS, sans-serif; font-size: 11px; line-height: 15px;}
+        td.c7 {padding-top: 10%; font-family: Helvetica, Arial, Verdana, Trebuchet MS, sans-serif; font-size: 16px; line-height: 16px;}
         a.c6 {color: #000000;}
         span.c5 {color: #000000}
-        td.c4 {padding-top: 5%; padding-bottom: 10%; font-family: Helvetica, Arial, Verdana, Trebuchet MS, sans-serif; font-size: 16px; line-height: 20px;}
-        td.c3 {font-family: Helvetica, Arial, Verdana, Trebuchet MS, sans-serif; font-size: 16px; line-height: 20px;}
-        td.c2 {padding-top: 5%; padding-bottom: 10%; font-family: Helvetica, Arial, Verdana, Trebuchet MS, sans-serif; font-size: 24px; line-height: 20px;}
+        td.c4 {padding-top: 5%; padding-bottom: 10%; font-family: Helvetica, Arial, Verdana, Trebuchet MS, sans-serif; font-size: 20px; line-height: 24px;}
+        td.c3 {font-family: Helvetica, Arial, Verdana, Trebuchet MS, sans-serif; font-size: 20px; line-height: 24px;}
+        td.c2 {padding-top: 5%; padding-bottom: 10%; font-family: Helvetica, Arial, Verdana, Trebuchet MS, sans-serif; font-size: 30px; line-height: 30px;}
         img.c1 {display: block;}
         /*]]>*/
     </style>
@@ -38,19 +38,20 @@
                     <td class="c8">
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
-                                <td class="c2">{{ trans('emails/maintenance.header') }}</td>
+                                <td class="c2">{{ trans('emails/welcome.welcome') }}</td>
                             </tr>
                             <tr>
                                 <td class="c3">{{ trans('emails/info.dear') }} {{$name}},</td>
                             </tr>
                             <tr>
-                                <td align="center"><img src="{{ asset('images/build/maintenance.png') }}" alt="Dragon Lancers Creative Agency Finish" width="100%" class="c1" /></td>
+                                <td align="center"><img src="{{ asset('images/build/welcome.png') }}" alt="Dragon Lancers Creative Agency Welcome" width="100%" class="c1" /></td>
                             </tr>
                             <tr>
-                                <td class="c4">{{ trans('emails/maintenance.timeframe').$timeframe }}</td>
-                            </tr>
-                            <tr>
-                                <td class="c4">{{ trans('emails/maintenance.back').$back }}</td>
+                                <td class="c4">{{ trans('emails/welcome.thx-inquiry') }}<br />
+                                    <br />
+                                    {{ trans('emails/welcome.each-client') }}<br />
+                                    <br />
+                                    {{ trans('emails/info.contact-soon') }}</td>
                             </tr>
                             <tr>
                                 <td class="c3">{{ trans('emails/info.kind-regards') }}<br />

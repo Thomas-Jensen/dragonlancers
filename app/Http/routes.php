@@ -63,3 +63,6 @@ Route::group(
 Route::resource('email', 'EmailController');
 
 
+
+
+

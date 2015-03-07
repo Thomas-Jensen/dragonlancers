@@ -1,4 +1,11 @@
-<div>
+<section class="menu-header">
+        <a href="{{ action('PagesController@home') }}">
+            <figure>
+                <img src="{{ asset('images/logo.svg') }}" height="50px" width="25px"/>
+                <h3>Dragon Lancers</h3>
+            </figure>
+        </a>
+
     <figure>
         <a class="menu-button">
             <span class="bar-1"></span>
@@ -7,6 +14,11 @@
         </a>
     </figure>
     <div class="menu">
+        <a class="menu-button internal">
+            <span class="bar-1"></span>
+            <span class="bar-2"></span>
+            <span class="bar-3"></span>
+        </a>
         <div class="small-menu-center-outer">
             <div class="small-menu-center-inner">
         <nav>
@@ -109,4 +121,4 @@
         </div>
     </div>
     </div>
-</div>
+</section>

@@ -15,7 +15,8 @@ return array(
 
     'header' => 'Vedligeholdelse af din app!',
 
-    'body' => 'Din application vil blive vedligeholdt i følgende tidsrum:  vi forventer at den er tilbage:',
+    'timeframe' => 'Din application vil blive vedligeholdt i følgende tidsrum: ',
 
+    'back' =>  'Vi forventer at den er tilbage: '
 
 );

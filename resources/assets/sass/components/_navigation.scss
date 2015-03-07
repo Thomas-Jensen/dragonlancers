@@ -11,6 +11,67 @@ a
   }
 }
 
+.menu-header
+{
+  width: 90%;
+  height: 3.750em;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  background: $white;
+  z-index: $menu;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  & figure:first-child
+  {
+    display: flex;
+    align-items: center;
+    width: 14em;
+  @include bp(3)
+  {
+    display: none;
+  }
+  & img
+    {
+      padding-right: 10%;
+    }
+  }
+
+  @include bp(3)
+  {
+    width: auto;
+    height: auto;
+  }
+}
+
+.fixed
+{
+  position: fixed;
+}
+
+.static
+{
+  position: static;
+}
+
+.internal
+{
+  position: fixed;
+  top: 1%;
+  right: 5%;
+  @include bp(3)
+  {
+    display: none;
+  }
+}
+
+.nav-up
+{
+  top: -3.750em;
+}
+
 .menu
 {
   background-color: $white;

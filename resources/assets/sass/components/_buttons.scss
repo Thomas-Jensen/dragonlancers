@@ -2,13 +2,18 @@
 {
   width: 3.125em;
   height: 3.125em;
-  display: block;
-  position: fixed;
-  top: 15%;
+  display: flex;
+  flex-direction: column;
+  top: 1%;
   right: 5%;
   z-index: $menuitem;
   border-radius: 0 0 0 0.250em;
   transition: all .5s ease-in-out;
+  @include bp(3)
+  {
+    top: 15%;
+    position: fixed;
+  }
   &:hover
   {
     cursor: pointer;

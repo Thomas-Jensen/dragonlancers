@@ -15,7 +15,9 @@ return array(
 
     'header' => 'Maintenance of your app!',
 
-    'body' => 'Your application will be maintained during the following time frame: we expect it to be back again at:',
+    'timeframe' => 'Your application will be maintained during the following time frame: ',
+
+    'back' =>  'We expect it to be back again at: '
 
 
 
