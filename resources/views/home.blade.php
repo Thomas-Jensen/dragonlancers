@@ -24,7 +24,7 @@
         </figure>
         <video autoplay loop class="landing-video" id="videoElement">
             <source src="{{ asset('movies/Dl-video-landing.mp4')}}" type="video/mp4" media="screen and (min-width:1024)">
-            <source src="{{ asset('movies/Dl-video-.webm')}}" type="video/webm" media="screen and (min-width:1024px)">
+            <source src="{{ asset('movies/dl-video-.webm')}}" type="video/webm" media="screen and (min-width:1024px)">
         </video>
     </section>
 </section>
