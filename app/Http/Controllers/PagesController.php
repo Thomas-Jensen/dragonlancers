@@ -2,6 +2,15 @@
 
 class PagesController extends Controller {
 
+
+
+    public function __construct()
+    {
+        $this->middleware('auth', ['only' => ['coldMail']]);
+    }
+
+
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -55,6 +64,12 @@ class PagesController extends Controller {
 	{
 		return view('errors.browser');
 	}
+
+
+    public function coldMail()
+    {
+        return view('emails.coldmail');
+    }
 
 
 	public function index()

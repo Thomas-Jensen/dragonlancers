@@ -56,12 +56,24 @@ class EmailController extends Controller {
     {
         //Get all data and store it in data variable
         $data = Input::all();
+        if (Input::get('lang') == 'da')
+        {
+            App::setLocale('da');
+        }
+        else
+        {
+            App::setLocale('en');
+        }
 
         //Setup rules in a rules array
         $rules = array(
-            'name' => 'required',
+            'lang' => 'required',
             'email' => 'required|email',
-            'messages' => 'required|min:5'
+            'name' => 'required',
+            'title' => 'required',
+            'intro' => 'required',
+            'body' => 'required',
+            'closing' => 'required'
         );
 
         //initialize a new instance of validator with our data and rules
@@ -74,7 +86,7 @@ class EmailController extends Controller {
             Mail::queue('emails.cold', $data, function($message) use ($data)
             {
                 $message->from('thomas@dragonlancers.com', 'Thomas');
-                $message->to($data['to'])->subject('Dragon Lancers contact form');
+                $message->to($data['email'])->subject($data['title']);
             }
             );
 
