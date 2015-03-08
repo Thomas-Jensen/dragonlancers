@@ -63,16 +63,6 @@ Route::group(
 
 /** OTHER PAGES THAT SHOULD NOT BE LOCALIZED **/
 Route::resource('email', 'EmailController');
-Route::get('new', function()
-{
-        $title='Hey we have blabalbalb';
-        $lang=App::setLocale('da');
-        $name='Thomas';
-        $intro='hey this is the intro we have notiched owejiorfojfewa;oefwjefw ao;afow;jfwe io;wejo w e;oifjio;wejo;fio ;jwowojwe joiajoefwoijfwe';
-        $body='This is the body owejo;wefaojof oijio;wefj ioij;jio;;wioef wewfefwe awafeefwfwea wea faaewf uihuiwef iuhhui.';
-        $closing='This is the closing statement, woeofiewjofewojfweajo owaeofewj wijoejoiwfeoji fawejoifweojifew joifweojwfe a.';
-    return view('emails.cold', compact('title', 'name', 'date', 'intro', 'body', 'closing', 'lang'));
-});
 
 
 

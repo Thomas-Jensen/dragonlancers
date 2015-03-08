@@ -53,7 +53,7 @@
                             </tr>
                             <tr>
                                 <td class="c4">
-                                    <img src="images/thomas-signature.png" width="250px" height="50px"/>
+                                    <img src="{{asset('images/thomas-signature.png')}}" width="250px" height="50px"/>
                                 </td>
                             </tr>
                         </table>
