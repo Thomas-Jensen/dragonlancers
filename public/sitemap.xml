@@ -645,4 +645,34 @@
                 />
     </url>
 
+    <url>
+        <loc>https://www.dragonlancers.com/en/blog/what-is-dragon-lancers/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/hvad-er-dragon-lancers/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/blog/what-is-dragon-lancers/"
+                />
+    </url>
+
+    <url>
+        <loc>https://www.dragonlancers.com/da/blog/hvad-er-dragon-lancers/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/what-is-dragon-lancers/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/hvad-er-dragon-lancers/"
+                />
+    </url>
+
+
+
 </urlset>
