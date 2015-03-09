@@ -18,7 +18,7 @@
     <section class="blog-container">
 
 
-    {!! Form::model($author, ['method' => 'PATCH', 'action' => ['AuthorsController@update', $author->slug_author]]) !!}
+        {!! Form::model($author, ['method' => 'PATCH', 'action' => ['AuthorsController@update', $author->slug_author]]) !!}
 
 
         @include('layouts.blog.authors.form', [$buttonText='Save Changes'])

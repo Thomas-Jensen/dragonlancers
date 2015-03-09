@@ -85,7 +85,7 @@ class EmailController extends Controller {
 
             Mail::queue('emails.cold', $data, function($message) use ($data)
             {
-                $message->from('thomas@dragonlancers.com', 'Thomas');
+                $message->from('thomas@dragonlancers.com', 'Thomas Jensen');
                 $message->to($data['email'])->subject($data['title']);
             }
             );

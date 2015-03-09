@@ -673,6 +673,34 @@
                 />
     </url>
 
+    <url>
+        <loc>https://www.dragonlancers.com/en/blog/http-requests-affects-seo/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/http-foresporgsler-pavirkning-af-seo/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/blog/http-requests-affects-seo/"
+                />
+    </url>
+
+    <url>
+        <loc>https://www.dragonlancers.com/da/blog/http-foresporgsler-pavirkning-af-seo/</loc>
+        <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.dragonlancers.com/en/http-requests-affects-seo/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="https://www.dragonlancers.com/da/blog/http-foresporgsler-pavirkning-af-seo/"
+                />
+    </url>
+
 
 
 </urlset>

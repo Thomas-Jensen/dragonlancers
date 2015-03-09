@@ -16,6 +16,9 @@
 
     <section class="blog-container">
 
+    {!! Form::open(['action' => 'ArticlesController@store']) !!}
+
+
     @include('layouts.blog.form', [$buttonText='Add Article'])
 
     @include('errors.list')
