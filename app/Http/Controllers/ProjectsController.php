@@ -3,9 +3,17 @@
 use DragonLancers\Http\Requests;
 use DragonLancers\Http\Controllers\Controller;
 
+use DragonLancers\Project;
 use Illuminate\Http\Request;
 
 class ProjectsController extends Controller {
+
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
 
 	/**
 	 * Display a listing of the resource.
@@ -14,7 +22,9 @@ class ProjectsController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		$projects = Project::all();
+
+        return view('projects.home', compact('projects'));
 	}
 
 	/**
@@ -24,7 +34,7 @@ class ProjectsController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return view('projects.create');
 	}
 
 	/**
@@ -34,7 +44,11 @@ class ProjectsController extends Controller {
 	 */
 	public function store()
 	{
-		//
+		$input = Request::all();
+
+        Project::create($input);
+
+        return view('projects.home');
 	}
 
 	/**
@@ -45,7 +59,9 @@ class ProjectsController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		$project = Project::where('id', $id)->firstOrFail();
+
+        return view('projects.show', compact('project'));
 	}
 
 	/**
@@ -56,8 +72,10 @@ class ProjectsController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
-	}
+        $project = Project::where('id', $id)->firstOrFail();
+
+        return view('projects.edit', compact('project'));
+    }
 
 	/**
 	 * Update the specified resource in storage.
@@ -65,10 +83,14 @@ class ProjectsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($id, request $request)
 	{
-		//
-	}
+        $project = Project::where('id', $id)->firstOrFail();
+
+        $project->update($request::all());
+
+        return view('projects.show', compact('project'));
+    }
 
 	/**
 	 * Remove the specified resource from storage.

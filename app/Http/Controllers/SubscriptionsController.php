@@ -3,9 +3,16 @@
 use DragonLancers\Http\Requests;
 use DragonLancers\Http\Controllers\Controller;
 
+use DragonLancers\Subscription;
 use Illuminate\Http\Request;
 
 class SubscriptionsController extends Controller {
+
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
 	/**
 	 * Display a listing of the resource.
@@ -14,7 +21,9 @@ class SubscriptionsController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		$subscriptions = Subscription::all();
+
+        return view('subscriptions.home', compact('subscriptions'));
 	}
 
 	/**
@@ -24,7 +33,7 @@ class SubscriptionsController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return view('subscriptions.create');
 	}
 
 	/**
@@ -34,7 +43,11 @@ class SubscriptionsController extends Controller {
 	 */
 	public function store()
 	{
-		//
+		$input = Request::all();
+
+        Subscription::create($input);
+
+        return view('subscriptions.home');
 	}
 
 	/**
@@ -45,7 +58,9 @@ class SubscriptionsController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		$subscription = Subscription::where('id', $id)->firstOrFail();
+
+        return view('subscriptions.show', compact('subscription'));
 	}
 
 	/**
@@ -56,7 +71,9 @@ class SubscriptionsController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
+        $subscription = Subscription::where('id', $id)->firstOrFail();
+
+        return view('subscriptions.edit', compact('subscription'));
 	}
 
 	/**
@@ -65,9 +82,13 @@ class SubscriptionsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($id, request $request)
 	{
-		//
+		$subscription = Subscription::where('id', $id)->firstOrFail();
+
+        $subscription->update($request::all());
+
+        return view('subscriptions.show', compact('subscription'));
 	}
 
 	/**

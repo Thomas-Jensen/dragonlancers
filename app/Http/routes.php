@@ -53,6 +53,10 @@ Route::group(
     Route::resource('authors', 'AuthorsController');
     Route::resource('articles', 'ArticlesController');
     Route::resource('uploads', 'UploadsController');
+    Route::resource('clients', 'ClientsController');
+    Route::resource('projects', 'ProjectsController');
+    Route::resource('subscriptions', 'SubscriptionsController');
+    Route::resource('invoices', 'InvoicesController');
     Route::get('auth/register', ['middleware' => 'auth']);
     Route::controllers([
         'auth' => 'Auth\AuthController',

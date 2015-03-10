@@ -11,7 +11,9 @@ class Subscription extends Model {
      */
     protected $fillable = [
         'client_id',
-        'start'
+        'services',
+        'fee',
+        'renews'
 
     ];
 

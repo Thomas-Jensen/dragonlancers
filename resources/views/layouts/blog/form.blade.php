@@ -57,7 +57,7 @@
 </div>
 
 
-<!-- Add Article Form Input -->
+<!-- $buttonText Article Form Input -->
 <div class="form-group">
     {!! Form::submit($buttonText, ['class' => 'form-control']) !!}
 </div>

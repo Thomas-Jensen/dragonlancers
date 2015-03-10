@@ -1,19 +1,18 @@
 <?php namespace DragonLancers\Http\Controllers;
 
-use DragonLancers\Client;
 use DragonLancers\Http\Requests;
 use DragonLancers\Http\Controllers\Controller;
 
+use DragonLancers\Invoice;
 use Illuminate\Http\Request;
 
-class ClientsController extends Controller {
+class InvoicesController extends Controller {
 
 
     public function __construct()
     {
         $this->middleware('auth');
     }
-
 
 	/**
 	 * Display a listing of the resource.
@@ -22,9 +21,9 @@ class ClientsController extends Controller {
 	 */
 	public function index()
 	{
-		$clients = Client::all();
+		$invoices = Invoice::all();
 
-        return view('clients.home', compact('clients'));
+        return view('invoices.home', compact('invoices'));
 	}
 
 	/**
@@ -34,7 +33,7 @@ class ClientsController extends Controller {
 	 */
 	public function create()
 	{
-		return view('clients.create');
+		return view('invoices.create');
 	}
 
 	/**
@@ -46,9 +45,9 @@ class ClientsController extends Controller {
 	{
 		$input = Request::all();
 
-        Client::create($input);
+        Invoice::create($input);
 
-        return view('clients.home');
+        return view('invoices.home');
 	}
 
 	/**
@@ -59,9 +58,9 @@ class ClientsController extends Controller {
 	 */
 	public function show($id)
 	{
-		$client = Client::where('id', $id)->firstOrFail();
+		$invoice = Invoice::where('id', $id)->firstOrFail();
 
-        return view('clients.show', compact('client'));
+        return view('invoices.show', compact('invoice'));
 	}
 
 	/**
@@ -72,10 +71,11 @@ class ClientsController extends Controller {
 	 */
 	public function edit($id)
 	{
-        $client = Client::where('id', $id)->firstOrFail();
+        $invoice = Invoice::where('id', $id)->firstOrFail();
 
-        return view('clients.edit', compact('client'));
-	}
+        return view('invoices.edit', compact('invoice'));
+
+    }
 
 	/**
 	 * Update the specified resource in storage.
@@ -85,12 +85,13 @@ class ClientsController extends Controller {
 	 */
 	public function update($id, request $request)
 	{
-        $client = Client::where('id', $id)->firstOrFail();
+        $invoice = Invoice::where('id', $id)->firstOrFail();
 
-        $client->update($request::all());
+        $invoice->update($request::all());
 
-        return view('clients.show', compact('client'));
-	}
+        return redirect('invoices.show', compact('invoice'));
+
+    }
 
 	/**
 	 * Remove the specified resource from storage.

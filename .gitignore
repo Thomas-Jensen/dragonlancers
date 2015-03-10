@@ -2,3 +2,4 @@
 /node_modules
 /articles
 .env
+/database/migrations/2015_03_06_171617_add_socialmedia_tables_to_authors_table.php

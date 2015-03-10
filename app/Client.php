@@ -21,6 +21,8 @@ class Client extends Model {
         'zip_code',
         'city',
         'country',
+        'language',
+        'currency'
     ];
 
 
@@ -32,5 +34,27 @@ class Client extends Model {
     public function projects()
     {
         return $this->hasMany('App\Project');
+    }
+
+
+    /**
+     * A client can have many subscriptions.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function subscriptions()
+    {
+        return $this->hasMany('App\Subscription');
+    }
+
+
+    /**
+     * A client can have many invoices.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function invoices()
+    {
+      return $this->hasMany('App\Invoice');
     }
 }
