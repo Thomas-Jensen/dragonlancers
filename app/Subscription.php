@@ -11,9 +11,15 @@ class Subscription extends Model {
      */
     protected $fillable = [
         'client_id',
+        'domain',
         'services',
         'fee',
-        'renews'
+        'renews',
+        'status',
+        'screen_shot',
+        'maintenance',
+        'work',
+        'seo'
 
     ];
 
@@ -24,7 +30,7 @@ class Subscription extends Model {
      */
     public function client()
     {
-        return $this->belongsTo('App\Client');
+        return $this->belongsTo('DragonLancers\Client');
     }
 
 }

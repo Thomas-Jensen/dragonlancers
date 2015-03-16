@@ -26,9 +26,9 @@ Route::group(
     Route::get(LaravelLocalization::transRoute('routes.work'), 'PagesController@work');
     Route::get(LaravelLocalization::transRoute('routes.services'), 'PagesController@services');
     Route::get(LaravelLocalization::transRoute('routes.about'), 'PagesController@about');
-    Route::get(LaravelLocalization::transroute('routes.authors'), 'AuthorsController@index');
-    Route::get(LaravelLocalization::transroute('routes.authors-home'), 'AuthorsController@index');
-    Route::get(LaravelLocalization::transroute('routes.coming'), 'PagesController@coming');
+    Route::get(LaravelLocalization::transRoute('routes.authors'), 'AuthorsController@index');
+    Route::get(LaravelLocalization::transRoute('routes.authors-home'), 'AuthorsController@index');
+    Route::get(LaravelLocalization::transRoute('routes.coming'), 'PagesController@coming');
     Route::get('browser', 'PagesController@browser');
     Route::post('contact', 'EmailController@contact');
     Route::get('success', 'PagesController@success');
@@ -54,9 +54,13 @@ Route::group(
     Route::resource('articles', 'ArticlesController');
     Route::resource('uploads', 'UploadsController');
     Route::resource('clients', 'ClientsController');
+    Route::get(LaravelLocalization::transRoute('routes.client'), 'PagesController@client');
     Route::resource('projects', 'ProjectsController');
+    Route::get('projects/{id}/create', 'ProjectsController@create');
     Route::resource('subscriptions', 'SubscriptionsController');
+    Route::get('subscriptions/{id}/create', 'SubscriptionsController@create');
     Route::resource('invoices', 'InvoicesController');
+    Route::get('invoices/{id}/create', 'InvoicesController@create');
     Route::get('auth/register', ['middleware' => 'auth']);
     Route::controllers([
         'auth' => 'Auth\AuthController',

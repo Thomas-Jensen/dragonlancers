@@ -16,7 +16,7 @@
 
     <section class="blog-container">
 
-        {!! Form::model($article, ['method' => 'PATCH', 'action' => ['ArticlesController@update', $article->slug_article]]) !!}
+        {!! Form::model($article, ['method' => 'PATCH', 'action' => ['ArticlesController@update', $article->id]]) !!}
 
 
         @include('layouts.blog.form', [$buttonText='Save Changes'])

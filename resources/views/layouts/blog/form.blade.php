@@ -15,7 +15,7 @@
 <div class="form-group">
     {!! Form::label('category', 'Category:') !!}
     <select name="category" required>
-        <option value='null'selected="selected" disabled>{{ $article->category or 'Choose Category' }}</option>
+        <option value='{{ $article->category or null }}'selected="selected" disabled>{{ $article->category or 'Choose Category' }}</option>
         <option value="php">PHP</option>
         <option value="html">HTML</option>
         <option value="css">CSS</option>
@@ -31,7 +31,7 @@
 <div class="form-group">
     {!! Form::label('author', 'Author:') !!}
     <select name="author" required>
-        <option value=''selected="selected" disabled>{{ $article->author or 'Choose Author' }}</option>
+        <option value='{{ $article->author or null }}'selected="selected">{{ $article->author or 'Choose Author' }}</option>
         @foreach($authors as $author)
             <option value="{{ $author->author }}">{{ $author->author }}</option>
         @endforeach
@@ -57,9 +57,9 @@
 </div>
 
 
-<!-- $buttonText Article Form Input -->
+<!-- Add Article Form Input -->
 <div class="form-group">
-    {!! Form::submit($buttonText, ['class' => 'form-control']) !!}
+    {!! Form::submit($buttonText, ['class' => 'submit-full']) !!}
 </div>
 
 

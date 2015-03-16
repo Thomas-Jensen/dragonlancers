@@ -126,6 +126,13 @@
 
 .submit
 {
+  & input
+  {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+  }
   transition: all .5s ease-in-out;
   background-color: $black;
   color: $white;
@@ -155,6 +162,7 @@
     font-size: 200%;
   }
 
+
   &:hover
   {
     transition: all .5s ease-in-out;
@@ -162,6 +170,13 @@
     color: $white;
     cursor: pointer;
   }
+}
+
+.submit-full
+{
+  @extend .submit;
+  width: 100%;
+  position: static;
 }
 
 .active

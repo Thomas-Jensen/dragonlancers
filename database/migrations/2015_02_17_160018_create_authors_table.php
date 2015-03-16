@@ -20,6 +20,11 @@ class CreateAuthorsTable extends Migration {
             $table->string('slug_author');
             $table->string('description_en', 150);
             $table->string('description_da', 150);
+            $table->string('facebook')->unique();
+            $table->string('googleplus')->unique();
+            $table->string('twitter')->unique();
+            $table->string('email')->unique();
+            $table->string('phone')->unique();
 			$table->timestamps();
 		});
 	}

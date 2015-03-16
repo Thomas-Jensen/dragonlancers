@@ -25,9 +25,9 @@ class CreateProjectsTable extends Migration {
             $table->timestamp('design_start');
             $table->timestamp('design_end');
             $table->timestamp('design_done');
-            $table->timestamp('coding_start');
-            $table->timestamp('coding_end');
-            $table->timestamp('coding_done');
+            $table->timestamp('development_start');
+            $table->timestamp('development_end');
+            $table->timestamp('development_done');
             $table->timestamp('finalizing_start');
             $table->timestamp('finalizing_end');
             $table->timestamp('finalizing_done');
@@ -39,6 +39,11 @@ class CreateProjectsTable extends Migration {
             $table->string('status');
             $table->integer('fee');
 			$table->timestamps();
+
+            $table->foreign('client_id')
+                ->references('id')
+                ->on('clients')
+                ->onDelete('cascade');
 		});
 	}
 

@@ -1,10 +1,10 @@
 <?php namespace DragonLancers\Http\Controllers;
 
+use DragonLancers\Client;
 use DragonLancers\Http\Requests;
 use DragonLancers\Http\Controllers\Controller;
-
 use DragonLancers\Subscription;
-use Illuminate\Http\Request;
+use Request;
 
 class SubscriptionsController extends Controller {
 
@@ -31,9 +31,11 @@ class SubscriptionsController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create($id)
 	{
-		return view('subscriptions.create');
+        $client = Client::where('id', $id)->firstOrFail();
+
+		return view('subscriptions.create', compact('client'));
 	}
 
 	/**
@@ -47,7 +49,7 @@ class SubscriptionsController extends Controller {
 
         Subscription::create($input);
 
-        return view('subscriptions.home');
+        return redirect('subscriptions');
 	}
 
 	/**
@@ -99,7 +101,11 @@ class SubscriptionsController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
-	}
+        $subscription = Subscription::where('id', $id)->firstOrFail();
+
+        $subscription->destroy();
+
+        return view('subscriptions.home');
+    }
 
 }

@@ -38,7 +38,7 @@
 <div class="form-group">
     {!! Form::label('language', 'Language:') !!}
     <select name="language" required>
-        <option value=''selected="selected" disabled>Choose Language</option>
+        <option value='{{ $client->language or null }}'selected="selected">{{ $client->language or 'Choose Language' }}</option>
         <option value="en">ENGLISH</option>
         <option value="da">DANISH</option>
     </select>
@@ -48,7 +48,7 @@
 <div class="form-group">
     {!! Form::label('currency', 'Currency:') !!}
     <select name="currency" required>
-        <option value=''selected="selected" disabled>Choose Currency</option>
+        <option value='{{ $client->currency or null }}'selected="selected")>{{ $client->currency or 'Choose Currency' }}</option>
         <option value="kr">KRONER</option>
         <option value="dollar">DOLLAR</option>
         <option value="euro">EURO</option>
@@ -69,7 +69,7 @@
 
 <!-- $buttonText Client Form Input -->
 <div class="form-group">
-    {!! Form::submit($buttonText, ['class' => 'form-control']) !!}
+    {!! Form::submit($buttonText, ['class' => 'submit-full']) !!}
 </div>
 
 {!! Form::close() !!}

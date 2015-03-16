@@ -1,10 +1,10 @@
 <?php namespace DragonLancers\Http\Controllers;
 
+use DragonLancers\Client;
 use DragonLancers\Http\Requests;
 use DragonLancers\Http\Controllers\Controller;
-
 use DragonLancers\Invoice;
-use Illuminate\Http\Request;
+use Request;
 
 class InvoicesController extends Controller {
 
@@ -31,9 +31,11 @@ class InvoicesController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create($id)
 	{
-		return view('invoices.create');
+        $client = Client::where('id', $id)->firstOrFail();
+
+		return view('invoices.create', compact('client'));
 	}
 
 	/**
@@ -47,7 +49,7 @@ class InvoicesController extends Controller {
 
         Invoice::create($input);
 
-        return view('invoices.home');
+        return redirect('invoices');
 	}
 
 	/**
@@ -101,7 +103,11 @@ class InvoicesController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
-	}
+        $invoice = Invoice::where('id', $id)->firstOrFail();
+
+        $invoice->destroy();
+
+        return view('invoices.home');
+    }
 
 }

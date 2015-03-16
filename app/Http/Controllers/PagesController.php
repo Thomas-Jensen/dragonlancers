@@ -1,5 +1,7 @@
 <?php namespace DragonLancers\Http\Controllers;
 
+use DragonLancers\Client;
+
 class PagesController extends Controller {
 
 
@@ -69,6 +71,14 @@ class PagesController extends Controller {
     public function coldMail()
     {
         return view('emails.coldmail');
+    }
+
+
+    public function client($slug)
+    {
+        $client = Client::where('slug', $slug)->firstOrFail();
+
+        return view('clients.show', compact('client'));
     }
 
 

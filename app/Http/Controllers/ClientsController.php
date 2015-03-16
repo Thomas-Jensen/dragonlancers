@@ -3,8 +3,7 @@
 use DragonLancers\Client;
 use DragonLancers\Http\Requests;
 use DragonLancers\Http\Controllers\Controller;
-
-use Illuminate\Http\Request;
+use Request;
 
 class ClientsController extends Controller {
 
@@ -46,9 +45,11 @@ class ClientsController extends Controller {
 	{
 		$input = Request::all();
 
+        $input['slug'] =str_slug(Request::get('name'), '-');
+
         Client::create($input);
 
-        return view('clients.home');
+        return redirect('clients');
 	}
 
 	/**
@@ -100,7 +101,12 @@ class ClientsController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
-	}
+        $client = Client::where('id', $id)->firstOrFail();
+
+        $client->delete();
+
+        return redirect('clients');
+
+    }
 
 }

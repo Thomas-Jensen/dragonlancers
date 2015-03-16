@@ -8,6 +8,7 @@
 <!-- Image Form Input -->
 <div class="form-group">
     {!! Form::label('image', 'Image:') !!}
+    <img src="{{ asset('images/authors/'). '/' . $author->image }}"/>
     {!! Form::file('image') !!}
 </div>
 
@@ -57,7 +58,7 @@
 
 <!-- Add Author Form Input -->
 <div class="form-group">
-    {!! Form::submit($buttonText, ['class' => 'form-control']) !!}
+    {!! Form::submit($buttonText, ['class' => 'submit-full']) !!}
 </div>
 
 

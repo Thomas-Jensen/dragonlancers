@@ -30,6 +30,8 @@ return array(
 
     'admin' => 'admin',
 
+    'client' => 'client/{slug}',
+
 
 
 );

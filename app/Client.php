@@ -14,6 +14,7 @@ class Client extends Model {
     protected $fillable = [
         'client_id',
         'name',
+        'slug',
         'phone',
         'email',
         'reg_number',
@@ -57,4 +58,7 @@ class Client extends Model {
     {
       return $this->hasMany('App\Invoice');
     }
+
+
 }
+

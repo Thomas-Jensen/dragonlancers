@@ -20,6 +20,11 @@ class CreateInvoicesTable extends Migration {
             $table->timestamp('due');
             $table->boolean('paid');
 			$table->timestamps();
+
+            $table->foreign('client_id')
+                ->references('id')
+                ->on('clients')
+                ->onDelete('cascade');
 		});
 	}
 
