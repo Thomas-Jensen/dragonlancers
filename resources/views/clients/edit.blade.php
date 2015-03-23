@@ -1,13 +1,9 @@
 @extends('layouts.default.default')
 
-@section('head')
-    @include('layouts.backend.header')
-@stop
-
 @section('content')
-    <section class="blog-menu-container">
-        <h1>Edit Client:</h1>
-    </section>
+
+    @include('layouts.backend.header', [$title='Edit Existing Client'])
+
 
     <section class="blog-container">
 

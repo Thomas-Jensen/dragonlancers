@@ -4,6 +4,7 @@
 
 @section('content')
 
+    @include('layouts.backend.header', [$title=''])
 
     <section class="blog-container">
 

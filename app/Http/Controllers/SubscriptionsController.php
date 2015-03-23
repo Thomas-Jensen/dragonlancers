@@ -3,6 +3,7 @@
 use DragonLancers\Client;
 use DragonLancers\Http\Requests;
 use DragonLancers\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Input;
 use DragonLancers\Subscription;
 use Request;
 
@@ -47,6 +48,20 @@ class SubscriptionsController extends Controller {
 	{
 		$input = Request::all();
 
+        if (Input::hasFile('screen_shot'))
+        {
+            $file = Input::file('screen_shot');
+
+            $name = time() . '-' . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path() . '/images/subscriptions/', $name);
+
+            $input['screen_shot'] = $name;
+        }
+        elseif (Input::hasFile('screen_shot') == null)
+        {
+            $input['screen_shot'] = 'no-image.png';
+        }
+
         Subscription::create($input);
 
         return redirect('subscriptions');
@@ -87,6 +102,16 @@ class SubscriptionsController extends Controller {
 	public function update($id, request $request)
 	{
 		$subscription = Subscription::where('id', $id)->firstOrFail();
+
+        if (Input::hasFile('screen_shot'))
+        {
+            $file = Input::file('screen_shot');
+
+            $name = time() . '-' . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path() . '/images/subscriptions/', $name);
+
+            $input['screen_shot'] = $name;
+        }
 
         $subscription->update($request::all());
 

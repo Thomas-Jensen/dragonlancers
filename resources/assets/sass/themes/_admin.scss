@@ -1,0 +1,34 @@
+.client-post
+{
+  @extend .blog-posts-authors;
+  height: auto;
+  & p
+  {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 80%;
+    margin: auto;
+  }
+
+}
+
+.subscription
+{
+  text-align: center;
+  flex-direction: column;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  align-items: center;
+
+  & img
+  {
+    width: 100%;
+  }
+
+  .sub-link
+  {
+    border: 0.15em solid #f3f3f3;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}

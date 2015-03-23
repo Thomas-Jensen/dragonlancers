@@ -78,7 +78,13 @@ class PagesController extends Controller {
     {
         $client = Client::where('slug', $slug)->firstOrFail();
 
-        return view('clients.show', compact('client'));
+        $subscriptions = $client->subscriptions;
+
+        $projects = $client->projects;
+
+        $invoices = $client->invoices;
+
+        return view('clients.frontend', compact('client', 'subscriptions', 'projects', 'invoices'));
     }
 
 

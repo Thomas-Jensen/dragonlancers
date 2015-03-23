@@ -54,20 +54,6 @@ class ProjectsController extends Controller {
 	{
 		$input = Request::all();
 
-        if (Input::hasFile('screen_shot'))
-        {
-            $file = Input::file('screen_shot');
-
-            $name = time() . '-' . $file->getClientOriginalExtension();
-            $file->move(public_path() . '/images/subscriptions/', $name);
-
-            $input['image'] = $name;
-        }
-        elseif (Input::hasFile('screen_shot') == null)
-        {
-            $input['image'] = 'no-image.png';
-        }
-
         Project::create($input);
 
         return redirect('projects');
@@ -110,16 +96,6 @@ class ProjectsController extends Controller {
 	public function update($id, request $request)
 	{
         $project = Project::where('id', $id)->firstOrFail();
-
-        if (Input::hasFile('screen_shot'))
-        {
-            $file = Input::file('screen_shot');
-
-            $name = time() . '-' . $file->getClientOriginalExtension();
-            $file->move(public_path() . '/images/subscriptions/', $name);
-
-            $input['image'] = $name;
-        }
 
         $project->update($request::all());
 

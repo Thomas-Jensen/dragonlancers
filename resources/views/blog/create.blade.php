@@ -2,17 +2,7 @@
 
 @section('content')
 
-    <section class="blog-menu-container">
-
-        <h1 class="dl"><a href="{{ url(LaravelLocalization::getCurrentLocale().'/'.'blog') }}">DRAGON LANCERS</a></h1>
-        <h2 class="ca"><a href="{{ url(LaravelLocalization::getCurrentLocale().'/'.'blog') }}">{{ trans('dragonlancers.ca') }} BLOG</a></h2>
-
-
-        <h1>Create New Article:</h1>
-
-
-
-    </section>
+   @include('layouts.backend.header', [$title='Create New Article'])
 
     <section class="blog-container">
 

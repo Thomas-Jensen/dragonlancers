@@ -34,7 +34,7 @@ class Client extends Model {
      */
     public function projects()
     {
-        return $this->hasMany('App\Project');
+        return $this->hasMany('DragonLancers\Project');
     }
 
 
@@ -45,7 +45,7 @@ class Client extends Model {
      */
     public function subscriptions()
     {
-        return $this->hasMany('App\Subscription');
+        return $this->hasMany('DragonLancers\Subscription');
     }
 
 
@@ -56,7 +56,7 @@ class Client extends Model {
      */
     public function invoices()
     {
-      return $this->hasMany('App\Invoice');
+      return $this->hasMany('DragonLancers\Invoice');
     }
 
 

@@ -1,17 +1,14 @@
 @extends('layouts.default.default')
 
-@section('head')
-    @include('layouts.backend.header')
-@stop
-
 @section('content')
-    <section class="blog-menu-container">
-        <div><h1>Add New Project:</h1></div>
-    </section>
+
+    @include('layouts.backend.header', [$title='Create New Project'])
+
 
     <section class="blog-container">
 
         {!! Form::open(['action' => 'ProjectsController@store']) !!}
+        {!! Form::hidden('client_id', $client->id) !!}
 
         @include('layouts.projects.form', [$buttonText='Create Project'])
 

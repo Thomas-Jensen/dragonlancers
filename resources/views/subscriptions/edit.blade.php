@@ -1,13 +1,9 @@
 @extends('layouts.default.default')
 
-@section('head')
-    @include('layouts.backend.header')
-@stop
-
 @section('content')
-    <section class="blog-menu-container">
-        <h1>Edit Subscription:</h1>
-    </section>
+
+    @include('layouts.backend.header', [$title='Edit Existing Subscription'])
+
 
     <section class="blog-container">
 

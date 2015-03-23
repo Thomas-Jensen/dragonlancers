@@ -38,6 +38,9 @@ class Project extends Model {
     ];
 
 
+    protected $dates = ['start', 'finish'];
+
+
     /**
      * A project belongs to a client.
      *

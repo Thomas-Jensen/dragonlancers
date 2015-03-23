@@ -62,7 +62,13 @@ class ClientsController extends Controller {
 	{
 		$client = Client::where('id', $id)->firstOrFail();
 
-        return view('clients.show', compact('client'));
+        $subscriptions = $client->subscriptions;
+
+        $projects = $client->projects;
+
+        $invoices = $client->invoices;
+
+        return view('clients.show', compact('client', 'subscriptions', 'projects', 'invoices'));
 	}
 
 	/**

@@ -1,17 +1,15 @@
 @extends('layouts.default.default')
 
-@section('head')
-    @include('layouts.backend.header')
-@stop
-
 @section('content')
-    <section class="blog-menu-container">
-        <h1>Add New Subscription:</h1>
-    </section>
+
+    @include('layouts.backend.header', [$title='Create New Subscription'])
+
 
     <section class="blog-container">
 
-        {!! Form::open(['action' => 'SubscriptionsController@store']) !!}
+        {!! Form::open(['action' => 'SubscriptionsController@store', 'files' => true]) !!}
+        {!! Form::hidden('client_id', $client->id) !!}
+
         @include('layouts.subscriptions.form', [$buttonText='Add Subscription'])
 
         @include('errors.list')

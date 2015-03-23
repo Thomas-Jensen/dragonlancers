@@ -1612,13 +1612,13 @@ section {
   width: 18.3em;
   height: 15em; }
 
-.blog-posts-authors {
+.blog-posts-authors, .client-post {
   width: 19.25em;
   height: 23.375em;
   border: 0.15em solid #f3f3f3;
   padding: .731em;
   margin: .731em; }
-  .blog-posts-authors header section {
+  .blog-posts-authors header section, .client-post header section {
     width: 90%;
     margin: auto;
     -webkit-justify-content: space-between;
@@ -2240,6 +2240,31 @@ section {
   @media (min-width: 1920px) {
     .padding {
       padding: 10em; } }
+
+.client-post {
+  height: auto; }
+  .client-post p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 80%;
+    margin: auto; }
+
+.subscription {
+  text-align: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .subscription img {
+    width: 100%; }
+  .subscription .sub-link {
+    border: 0.15em solid #f3f3f3;
+    margin-top: 1em;
+    margin-bottom: 1em; }
 
 @-webkit-keyframes fadeIn {
   0% {

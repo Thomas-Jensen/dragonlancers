@@ -16,6 +16,8 @@ class Invoice extends Model {
         'paid',
     ];
 
+    protected $dates = ['due'];
+
 
     public function client()
     {

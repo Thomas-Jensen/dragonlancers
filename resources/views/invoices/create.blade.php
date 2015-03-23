@@ -1,17 +1,14 @@
 @extends('layouts.default.default')
 
-@section('head')
-    @include('layouts.backend.header')
-@stop
-
 @section('content')
-    <section class="blog-menu-container">
-        <h1>Add New Invoice:</h1>
-    </section>
+
+    @include('layouts.backend.header', [$title='Create New Invoice'])
+
 
     <section class="blog-container">
 
         {!! Form::open(['action' => 'InvoicesController@store']) !!}
+        {!! Form::hidden('client_id', $client->id) !!}
 
         @include('layouts.invoices.form', [$buttonText='Create Invoice'])
 

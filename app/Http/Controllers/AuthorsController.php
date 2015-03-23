@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Input;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Request;
-
 class AuthorsController extends Controller {
 
 

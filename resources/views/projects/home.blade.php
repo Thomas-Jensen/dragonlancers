@@ -4,6 +4,7 @@
 
 @section('content')
 
+    @include('layouts.backend.header', [$title='Create New Project'])
 
     <section class="blog-container">
 

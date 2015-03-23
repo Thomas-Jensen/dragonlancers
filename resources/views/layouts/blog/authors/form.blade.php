@@ -8,7 +8,7 @@
 <!-- Image Form Input -->
 <div class="form-group">
     {!! Form::label('image', 'Image:') !!}
-    <img src="{{ asset('images/authors/'). '/' . $author->image }}"/>
+    <img src="{{ asset('images/authors/'). '/'}}{{$author->image or null}}"/>
     {!! Form::file('image') !!}
 </div>
 

@@ -1,24 +1,13 @@
 @extends('layouts.default.default')
 
-
-
 @section('content')
+
+    @include('layouts.backend.header', [$title='Create New Invoice'])
 
 
     <section class="blog-container">
 
-        <h1>Invoices:</h1>
-
-
-
-        @foreach($invoices as $invoice)
-
-            <div>
-                {{ $invoice->due }}
-            </div>
-
-        @endforeach
-
+        <h1>{{ $invoice->due }}</h1>
 
 
     </section>
