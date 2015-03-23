@@ -114,7 +114,7 @@ class AuthorsController extends Controller {
         {
             $file = Input::file('image');
 
-            $name = time() . '-' . $input['slug_author'] . '.' . $file->getClientOriginalExtension();
+            $name = time() . '-' . $author->slug_author . '.' . $file->getClientOriginalExtension();
             $file->move(public_path() . '/images/authors/', $name);
 
             $input['image'] = $name;
