@@ -52,6 +52,11 @@ class EmailController extends Controller {
     }
 
 
+    /**
+     * Send a cold mail
+     *
+     * @return string
+     */
     public function cold()
     {
         //Get all data and store it in data variable
@@ -95,6 +100,147 @@ class EmailController extends Controller {
         else{
             return Redirect::back()->withInput()->withErrors($validation->messages());
         }
+    }
+
+
+    /**
+     * Send the Project Start Email
+     *
+     * @param $client
+     */
+    public static function start($client)
+    {
+        App::setLocale($client->language);
+
+        $data = $client->toArray();
+
+        Mail::queue('emails.stages.start', $data, function($message) use ($data)
+        {
+            $message->from('status@dragonlancers.com', 'Dragon Lancers');
+            $message->to($data['email'])->subject(trans('emails/stages/start.title'));
+        }
+        );
+    }
+
+
+    /**
+     * Send the Project Planning stage Email
+     *
+     * @param $client
+     */
+    public static function planning($client)
+    {
+        App::setLocale($client->language);
+
+        $data = $client->toArray();
+
+        Mail::queue('emails.stages.planning', $data, function($message) use ($data)
+        {
+            $message->from('status@dragonlancers.com', 'Dragon Lancers');
+            $message->to($data['email'])->subject(trans('emails/stages/planning.title'));
+        }
+        );
+    }
+
+
+
+    /**
+     * Send the Project Design stage Email
+     *
+     * @param $client
+     */
+    public static function design($client)
+    {
+        App::setLocale($client->language);
+
+        $data = $client->toArray();
+
+        Mail::queue('emails.stages.design', $data, function($message) use ($data)
+        {
+            $message->from('status@dragonlancers.com', 'Dragon Lancers');
+            $message->to($data['email'])->subject(trans('emails/stages/design.title'));
+        }
+        );
+    }
+
+
+    /**
+     * Send the Project Development stage Email
+     *
+     * @param $client
+     */
+    public static function development($client)
+    {
+        App::setLocale($client->language);
+
+        $data = $client->toArray();
+
+        Mail::queue('emails.stages.development', $data, function($message) use ($data)
+        {
+            $message->from('status@dragonlancers.com', 'Dragon Lancers');
+            $message->to($data['email'])->subject(trans('emails/stages/development.title'));
+        }
+        );
+    }
+
+
+    /**
+     * Send the Project Finalizing stage Email
+     *
+     * @param $client
+     */
+    public static function finalizing($client)
+    {
+        App::setLocale($client->language);
+
+        $data = $client->toArray();
+
+        Mail::queue('emails.stages.finalizing', $data, function($message) use ($data)
+        {
+            $message->from('status@dragonlancers.com', 'Dragon Lancers');
+            $message->to($data['email'])->subject(trans('emails/stages/finalizing.title'));
+        }
+        );
+    }
+
+
+    /**
+     * Send the Project Launch stage Email
+     *
+     * @param $client
+     */
+    public static function launch($client)
+    {
+        App::setLocale($client->language);
+
+        $data = $client->toArray();
+
+        Mail::queue('emails.stages.launch', $data, function($message) use ($data)
+        {
+            $message->from('status@dragonlancers.com', 'Dragon Lancers');
+            $message->to($data['email'])->subject(trans('emails/stages/launch.title'));
+        }
+        );
+    }
+
+
+    /**
+     * Send the Project Finish Email
+     *
+     * @param $client
+     */
+    public static function finish($client)
+    {
+        App::setLocale($client->language);
+
+        $data = $client->toArray();
+
+        Mail::queue('emails.stages.finish', $data, function($message) use ($data)
+        {
+            $message->from('status@dragonlancers.com', 'Dragon Lancers');
+            $message->to($data['email'])->subject(trans('emails/stages/finish.title'));
+        }
+        );
     }
 
 

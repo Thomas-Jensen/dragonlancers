@@ -4,6 +4,7 @@ use DragonLancers\Client;
 use DragonLancers\Http\Requests;
 use DragonLancers\Http\Controllers\Controller;
 use DragonLancers\Project;
+use Illuminate\Support\Facades\Input;
 use Request;
 
 /**
@@ -13,6 +14,9 @@ use Request;
 class ProjectsController extends Controller {
 
 
+    /**
+     *
+     */
     public function __construct()
     {
         $this->middleware('auth');
@@ -56,6 +60,18 @@ class ProjectsController extends Controller {
 
         Project::create($input);
 
+        $data = Input::all();
+
+        if($data['client_id'] == 'start')
+        {
+
+            $id = $data['client_id'];
+
+            $client = Client::where('id', $id)->firstOrFail();
+
+            EmailController::start($client);
+        }
+
         return redirect('projects');
 	}
 
@@ -98,6 +114,12 @@ class ProjectsController extends Controller {
         $project = Project::where('id', $id)->firstOrFail();
 
         $project->update($request::all());
+
+        $client = $project->client;
+
+        $status = $project->status;
+
+        EmailController::$status($client);
 
         return view('projects.show', compact('project'));
     }
