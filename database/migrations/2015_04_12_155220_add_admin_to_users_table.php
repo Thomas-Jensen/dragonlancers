@@ -14,7 +14,7 @@ class AddAdminToUsersTable extends Migration {
 	{
 		Schema::table('users', function(Blueprint $table) {
             $table->string('admin');
-            $table->integer('client_id')->unsigned();
+            $table->integer('client_id')->unsigned()->nullable();
 
             $table->foreign('client_id')
                 ->references('id')
