@@ -21,10 +21,7 @@
         <h1 class="dl"><a href="{{ url(LaravelLocalization::getCurrentLocale().'/'.'blog') }}">DRAGON LANCERS</a></h1>
         <h2 class="ca"><a href="{{ url(LaravelLocalization::getCurrentLocale().'/'.'blog') }}">{{ trans('dragonlancers.ca') }}</a></h2>
 
-
         <h1>Login:</h1>
-
-
 
     </section>
 <section class="container-fluid center">
@@ -63,7 +60,7 @@
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="form-control">
+								<button type="submit" class="form-control form-submit">
 									Login
 								</button>
 
