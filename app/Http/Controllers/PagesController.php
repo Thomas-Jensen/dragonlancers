@@ -9,7 +9,7 @@ class PagesController extends Controller {
 
     public function __construct()
     {
-        $this->middleware('auth', ['only' => ['client']]);
+        $this->middleware('auth', ['only' => ['client', 'coldMail']]);
         $this->middleware('admin', ['only' => ['coldMail']]);
     }
 
