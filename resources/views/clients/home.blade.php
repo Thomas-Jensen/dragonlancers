@@ -1,5 +1,20 @@
 @extends('layouts.default.default')
 
+@section('head')
+
+    @include('layouts.default.meta',
+    [
+        $title = 'Dragon Lancers | ' . trans('title.creative-agency'),
+        $description = trans('description.home'),
+        $descriptionSchemaorg  = trans('description.home-schemaorg'),
+        $descriptionTwitter = trans('description.home-twitter'),
+        $typeOpengraph = 'website',
+        $descriptionOpengraph = trans('description.home-opengraph'),
+        $image = 'https://www.dragonlancers.com/images/dl-logo.png'
+    ])
+
+@stop
+
 @section('content')
 
     @include('layouts.backend.header', [$title='Clients:'])
