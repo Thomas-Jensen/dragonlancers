@@ -16,6 +16,7 @@ class AuthorsController extends Controller {
     public function __construct()
     {
         $this->middleware('auth', ['only' => ['create', 'edit', 'store', 'update']]);
+        $this->middleware('admin', ['only' => ['create', 'edit', 'store', 'update']]);
     }
 
 

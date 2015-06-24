@@ -26,6 +26,8 @@
             </section>
             </div>
 
+
+
         <div class="blog-post">
         <section class="subscription">
                 <h3>Projects:</h3> </br>

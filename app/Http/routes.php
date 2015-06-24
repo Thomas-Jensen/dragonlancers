@@ -34,6 +34,7 @@ Route::group(
     Route::get('success', 'PagesController@success');
     Route::get('cold', 'PagesController@coldMail');
     Route::post('cold', 'EmailController@cold');
+    Route::post('client', 'EmailController@client');
     Route::get('blog', 'ArticlesController@index');
     Route::get('blog/admin', 'ArticlesController@admin');
     Route::get('blog/create', 'ArticlesController@create');
@@ -61,6 +62,9 @@ Route::group(
     Route::get('subscriptions/{id}/create', 'SubscriptionsController@create');
     Route::resource('invoices', 'InvoicesController');
     Route::get('invoices/{id}/create', 'InvoicesController@create');
+    Route::get('/login', array('as' => 'login', 'uses' => 'Auth\AuthController@getLogin'));
+    Route::post('/login', array('as' => 'login', 'uses' => 'Auth\AuthController@postLogin'));
+    Route::get('/logout', array('as' => 'logout', 'uses' => 'Auth\AuthController@getLogout'));
     Route::get('auth/register', ['middleware' => 'auth']);
     Route::controllers([
         'auth' => 'Auth\AuthController',

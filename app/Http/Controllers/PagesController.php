@@ -1,6 +1,7 @@
 <?php namespace DragonLancers\Http\Controllers;
 
 use DragonLancers\Client;
+use Illuminate\Support\Facades\Auth;
 
 class PagesController extends Controller {
 
@@ -8,7 +9,8 @@ class PagesController extends Controller {
 
     public function __construct()
     {
-        $this->middleware('auth', ['only' => ['coldMail']]);
+        $this->middleware('auth', ['only' => ['client']]);
+        $this->middleware('admin', ['only' => ['coldMail']]);
     }
 
 
@@ -74,9 +76,9 @@ class PagesController extends Controller {
     }
 
 
-    public function client($slug)
+    public function client()
     {
-        $client = Client::where('slug', $slug)->firstOrFail();
+        $client = Client::where('id', Auth::user()->client_id)->firstOrFail();
 
         $subscriptions = $client->subscriptions;
 

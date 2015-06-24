@@ -26,7 +26,7 @@ return array(
 
     'authors-home' => 'forfattere',
 
-    'client' => 'klient/{slug}',
+    'client' => 'klient',
 
 
 

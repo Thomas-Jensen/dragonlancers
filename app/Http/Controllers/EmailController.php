@@ -103,6 +103,27 @@ class EmailController extends Controller {
     }
 
 
+
+    /**
+     * Send a new client mail
+     *
+     * @return string
+     */
+    public static function client($client, $input)
+    {
+        App::setLocale($client->language);
+
+        $data = array_merge($client->toArray(), $input);
+
+        Mail::queue('emails.client', $data, function($message) use ($data)
+        {
+            $message->from('status@dragonlancers.com', 'Dragon Lancers');
+            $message->to($data['email'])->subject(trans('emails/client.title'));
+        }
+        );
+    }
+
+
     /**
      * Send the Project Start Email
      *

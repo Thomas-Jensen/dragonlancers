@@ -17,8 +17,9 @@ class AuthController extends Controller {
 	| a simple trait to add these behaviors. Why don't you explore it?
 	|
 	*/
+    protected $loginPath = 'login';
 
-	use AuthenticatesAndRegistersUsers;
+    use AuthenticatesAndRegistersUsers;
 
 	/**
 	 * Create a new authentication controller instance.

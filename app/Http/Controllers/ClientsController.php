@@ -1,6 +1,7 @@
 <?php namespace DragonLancers\Http\Controllers;
 
 use DragonLancers\Client;
+use DragonLancers\User;
 use DragonLancers\Http\Requests;
 use DragonLancers\Http\Controllers\Controller;
 use Request;
@@ -11,6 +12,7 @@ class ClientsController extends Controller {
     public function __construct()
     {
         $this->middleware('auth');
+        $this->middleware('admin');
     }
 
 
@@ -45,9 +47,23 @@ class ClientsController extends Controller {
 	{
 		$input = Request::all();
 
+        $input['code'] = $password = str_random(10);
+
+        $input['password'] = bcrypt($input['code']);
+
         $input['slug'] =str_slug(Request::get('name'), '-');
 
         Client::create($input);
+
+        $name = Request::get('name');
+
+        $input['client_id'] = Client::where('name',$name)->firstOrFail()->id;
+
+        User::create($input);
+
+        $client = Client::where('name',$name)->firstOrFail();
+
+        EmailController::client($client, $input);
 
         return redirect('clients');
 	}

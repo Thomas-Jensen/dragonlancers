@@ -14,8 +14,17 @@
                     {{ $client->name }}
                 </h2>
             </header>
+            @if($projects->isEmpty() && $subscriptions->isEmpty() && $invoices->isEmpty())
+                <div>
+                    </br></br>
+                    <p>{{ trans('backend.nothing') }}</p>
+                </div>
+            @endif
+</div>
             @if(!$subscriptions->isEmpty())
-                <section class="subscription">
+            <div class="blog-post">
+
+            <section class="subscription">
                     <h3>Subscriptions:</h3> </br>
                     @foreach($subscriptions as $subscription)
                         <h3><a href="http://{{ $subscription->domain }}">{{ $subscription->domain }}</a></h3>

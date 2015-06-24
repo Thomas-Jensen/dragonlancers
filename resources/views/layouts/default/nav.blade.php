@@ -78,9 +78,16 @@
                 </li>
 
                 <li class="nav-item">
+                    <a id="contact-link" class="{{ Request::is(LaravelLocalization::getCurrentLocale().'/'.trans('routes.client').'*') ? 'active' : ''}}"
+                       href="{{ url(laravelLocalization::getCurrentLocale().'/'.trans('routes.client')) }}">{{ trans('routes.client') }}</a>
+                </li>
+
+                <li class="nav-item">
                     <a id="blog-link" class="{{ Request::is(LaravelLocalization::getCurrentLocale().'/'.trans('routes.blog').'*') ? 'active' : ''}}"
                        href="{{ url(laravelLocalization::getCurrentLocale().'/'.'blog') }}">Blog</a>
                 </li>
+
+
 
                     <li class="nav-item">
                         <a rel="alternate" @if(LaravelLocalization::getCurrentLocaleName() == 'English') class ='active'@endif href="{{LaravelLocalization::getLocalizedURL('en') }}" hreflang="en">EN</a>

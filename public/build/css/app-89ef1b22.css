@@ -423,7 +423,8 @@ a {
   margin: 0% 0% 0% 10%; }
 
 .nav-item {
-  margin-bottom: 1%; }
+  margin-bottom: 1%;
+  text-transform: capitalize; }
   .nav-item a:hover {
     color: #c54500; }
 

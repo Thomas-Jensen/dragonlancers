@@ -29,7 +29,8 @@ class Kernel extends HttpKernel {
 		'guest' => 'DragonLancers\Http\Middleware\RedirectIfAuthenticated',
 		'localize' => 'Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes',
 		'localizationRedirect' => 'Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter',
-        'admin' => 'DragonLancers\Http\Middleware\RedirectIfNotAdmin'
+        'admin' => 'DragonLancers\Http\Middleware\RedirectIfNotAdmin',
+        'user' => 'DragonLancers\Http\Middleware\RedirectIfNotCorrectIdUser'
 	];
 
 }

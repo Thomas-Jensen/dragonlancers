@@ -18,6 +18,7 @@ class ArticlesController extends Controller {
     public function __construct()
     {
         $this->middleware('auth', ['only' => ['create', 'edit', 'update', 'store', 'admin']]);
+        $this->middleware('admin', ['only' => ['create', 'edit', 'update', 'store', 'admin']]);
     }
 
 
