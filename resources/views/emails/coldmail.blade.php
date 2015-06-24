@@ -65,7 +65,7 @@
 
         <!-- SEND Form Input -->
         <div class="form-group">
-            {!! Form::submit('SEND', ['class' => 'form-control']) !!}
+            {!! Form::submit('SEND', ['class' => 'form-control form-submit']) !!}
         </div>
 
 
